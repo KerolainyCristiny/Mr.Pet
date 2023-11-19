@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lato:wght@700&display=swap');
+
+.btnCategoria{
+  margin: 0 4rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 3rem;
+  font-family: "Inter";
+  color: #CEA0AA ;
+  text-transform: uppercase;
+  /* place-items: start;
+  place-self: start; */
+}
+
+.btn {
+  /* padding: 0 2.2rem; */
+  background-color: #535878; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-radius: 20px;
+  place-content: center ;
+}
+
+.btn img{
+  width: 3rem;
+}

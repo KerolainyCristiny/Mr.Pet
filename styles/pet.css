@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lato:wght@700&display=swap');
+
+.petContainer{
+  font-family: "Inter";
+  background-color: rgba(72, 62, 109, 0.725);
+  overflow-x: hidden;
+
+}
+
+.titulo{
+  color: #E9C2C5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.titulo h1{
+  margin: 3rem 3rem 0;
+  font-size: 6rem;
+  text-transform: uppercase;
+
+}
+.titulo h4{
+  margin: 0 3rem;
+  grid-area: 2;
+  align-self: center;
+}
+.titulo img{
+  width: 3rem;
+  margin-right: 5rem;
+  grid-row: 2;
+  place-self: end;
+}
+
+.btnAnimais{
+  display: flex;
+  gap: 3rem;
+  text-transform: uppercase;
+  margin: 2rem 2rem 0;
+}
+
+.btnAnimais a{
+  background-color: #E9C2C5;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #535878;
+  padding: 1.2rem 2.2rem;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}

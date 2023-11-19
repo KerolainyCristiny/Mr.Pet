@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lato:wght@700&display=swap');
+
+.produtos{ 
+  /* posicionamento de tela */
+  margin-bottom: 500px;
+  display: grid;
+  place-items: center;
+  place-self: center;
+  margin: 0 auto 5rem;
+}
+
+.grid{
+  /* height: 65rem ;  para ajustar a rolagem dos produtos*/
+  /* 3 grid de produtos */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+}
+
+.item{
+  /* tamanho da caixa */
+  background-color: antiquewhite;
+  font-family: "Inter";
+  text-transform: uppercase;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.imgProduto img{
+  width: 15rem;
+  height: 15rem;
+}
+.descricao{
+  /* bloco de descrição, add grid 2 clum, a primeira pega tudo, 2row valores - Iconfav */
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap:.5rem;
+  place-items: center;
+  place-self: center;
+
+}
+.valores{
+  grid-area: 2;
+  place-items: center;
+  place-self: center;
+  line-height:.5rem;
+}
+.valores h1{
+  font-size: 2.2rem;
+}
+.valores h4{
+  font-size: .8rem;
+  
+}
+.descricao img {
+  width: 3rem;
+  grid-row: 2;
+  align-self: end;
+  justify-self: start;
+  margin-bottom: 1rem;
+ 
+}

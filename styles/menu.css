@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+
+.header{
+    background-color: #E9C2C5;
+    padding: .2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-height: 4rem;
+    margin-bottom: 1rem;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+.logoHome{
+    margin: 0;
+    width: 4.5rem;
+    place-self: center;
+    /* padding: .5rem; */
+
+}
+
+.iconePesquisa{
+    width: 2.2rem; 
+    margin-left: .5rem; 
+}
+
+.iconeCarrinho{
+    width: 2.5rem;
+    place-self: center;
+    padding: .5rem;
+}
+
+.carPerfil{
+    display: flex;
+    place-self: end;
+    margin-right: 2rem;
+    gap: .7rem;
+}
+.iconePerfil{
+    width: 6rem;
+    align-items: end;
+    place-self: center;
+    padding: .5rem;
+}
+
+button{
+    border: none;
+    background: none;
+    padding: .3rem;
+    display: flex;
+    align-items: center;
+}
+
+
+/* MENU HAMBURGER */
+.menu{
+    max-width: 2rem;
+    width: 100%;
+    margin-left: 1rem;
+
+}

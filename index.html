@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="./img/logoPurpleico.ico">
+    
+    <title>HOME</title>
+</head>
+<body>
+
+<!-- MENU HEADER -->
+    <div class="header">
+        <!-- Lupa de busca - botão que se o usuario clicar com javaScript a logo tem que sumir e a barra de pesquisa aparecer -->
+        <button class="botaoPesquisa"><img class="iconePesquisa" src="img/iconePesquisa.svg" alt=""></button>
+        <img class="logoHome" src="img/logoPurple.svg" alt="">
+          
+        <div class="carPerfil">
+            <a href="./carrinho.html" class="botaoCarrinho"><img class="iconeCarrinho" src="img/iconeCarrinho.svg" alt=""></a>
+            <a href="./perfil.html" class="botaoPerfil"><img class="iconePerfil" src="img/IconePerfil.svg" alt=""></a>
+            <!-- botao perfil vai ser um a para a pagina de perfil -->
+        </div>
+    </div><!-- header -->
+
+<!-- MENU HAMBURGUER -->
+    <div>
+        <img class="menu" src="./img/Vector.svg"></img>
+    </div>
+
+<!-- CONTAINER DO SLIDE / não responsivo -->
+    <div class="slider"><!-- slider  -->
+        <div class="slides"><!-- slides  -->
+            <!-- botoes -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <!-- img slides -->
+            <div class="slide first"><img class="slide0" src="./img/slide1.jpg" alt=""></div>
+            <div class="slide"><img class="slide1" src="./img/slide2.jpg" alt=""></div>
+            <div class="slide"><img class="slide2" src="./img/slide3.jpg" alt=""></div>
+            <div class="slide"><img class="slide3" src="./img/slide4.jpg" alt=""></div>
+            <!-- img slide -->
+
+            <!-- navegacao auto -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div><!-- slides  -->
+
+        <!-- label's são forma de entrada -->
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div><!-- slider  -->
+
+
+<!-- Botões PRODUTO / MARCAS/ MAIS VENDIDOS / PROMOÇÕES  -->
+    <div class="btnCategoria">
+        <div class="btn">
+            <img src="./img/iconPromocao.svg" alt="">
+            <h2>Produtos</h2>
+        </div>
+        <div class="btn">
+            <img src="./img/iconPromocao.svg" alt="">
+            <h2>Marcas</h2>
+        </div>
+        <div class="btn" id="btn">
+            <img src="./img/iconPromocao.svg" alt="">
+            <h2>Mais Vendidos</h2>
+        </div>
+        <div class="btn">
+            <img src="./img/iconPromocao.svg" alt="">
+            <h2>Promoções</h2>
+        </div>
+    </div><!--Fim botoes categoria-->
+
+
+<!--TITULO E BOTOWS DE ANIMAIS  -->
+    <div class="petContainer">
+        <div class="titulo">
+            <h1>Pets</h1>
+            <h4>Ver mais</h4>
+            <img src="./img/setaBranca.png" alt="">
+            <!-- <img src="./img/setaFina.png" alt=""> -->
+        </div>
+        <div class="btnAnimais">
+            <a href="/">Gatos</a>
+            <a href="/">Cachorros</a>
+            <a href="/">Passáros</a>
+            <a href="/">Peixes</a>
+            <a href="/">Coelhos</a>
+            <a href="/">Hamister</a>
+            <a href="/">Tartarugas</a>
+        </div>
+
+<!--PRODUTOS-->
+        <div class="produtos"><!--limite de posicionamento geral-->
+            <div class="grid"><!--divisão do grid-->
+               
+                <div class="item 1"><!--config do produto-->
+                    <div class="imgProduto">
+                        <img src="./img/slide1.jpg" alt="">
+                    </div>
+                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                        <h3>Nome Produto</h3>
+                        <div class="valores"><!--posicionamento dos valores-->
+                            <h4><s>R$ 99.99</s></h4>
+                            <h1>R$ 79.90</h1>
+                            <h4>ou 4x de R$19.99</h4>
+                        </div><!--valores-->
+                        <img src="./img/Group.png" alt="Favoritar">
+                    </div>
+                </div><!--item1-->
+
+                <div class="item 2"><!--config do produto-->
+                    <div class="imgProduto">
+                        <img src="./img/slide4.jpg" alt="">
+                    </div>
+                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                        <h3>Nome Produto</h3>
+                        <div class="valores"><!--posicionamento dos valores-->
+                            <h4><s>R$ 99.99</s></h4>
+                            <h1>R$ 79.90</h1>
+                            <h4>ou 4x de R$19.99</h4>
+                        </div><!--valores-->
+                        <img src="./img/Group.png" alt="Favoritar">
+                    </div>
+                </div><!--item2-->
+                
+                <div class="item 3"><!--config do produto-->
+                    <div class="imgProduto">
+                        <img src="./img/slide2.jpg" alt="">
+                    </div>                    
+                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                        <h3>Nome Produto</h3>
+                        <div class="valores"><!--posicionamento dos valores-->
+                            <h4><s>R$ 99.99</s></h4>
+                            <h1>R$ 79.90</h1>
+                            <h4>ou 4x de R$19.99</h4>
+                        </div><!--valores-->
+                        <img src="./img/Group.png" alt="Favoritar">
+                    </div>
+                </div><!--item3-->
+
+                    <div class="item 4"><!--config do produto-->
+                    <div class="imgProduto">
+                        <img src="./img/slide1.jpg" alt="">
+                    </div>
+                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                        <h3>Nome Produto</h3>
+                        <div class="valores"><!--posicionamento dos valores-->
+                            <h4><s>R$ 99.99</s></h4>
+                            <h1>R$ 79.90</h1>
+                            <h4>ou 4x de R$19.99</h4>
+                        </div><!--valores-->
+                        <img src="./img/Group.png" alt="Favoritar">
+                    </div>
+                </div><!--item4-->
+
+                <div class="item 5"><!--config do produto-->
+                    <div class="imgProduto">
+                        <img src="./img/slide4.jpg" alt="">
+                    </div>
+                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                        <h3>Nome Produto</h3>
+                        <div class="valores"><!--posicionamento dos valores-->
+                            <h4><s>R$ 99.99</s></h4>
+                            <h1>R$ 79.90</h1>
+                            <h4>ou 4x de R$19.99</h4>
+                        </div><!--valores-->
+                        <img src="./img/Group.png" alt="Favoritar">
+                    </div>
+                </div><!--item5-->
+                
+                <div class="item 6"><!--config do produto-->
+                    <div class="imgProduto">
+                        <img src="./img/slide2.jpg" alt="">
+                    </div>                    
+                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                        <h3>Nome Produto</h3>
+                        <div class="valores"><!--posicionamento dos valores-->
+                            <h4><s>R$ 99.99</s></h4>
+                            <h1>R$ 79.90</h1>
+                            <h4>ou 4x de R$19.99</h4>
+                        </div><!--valores-->
+                        <img src="./img/Group.png" alt="Favoritar">
+                    </div>
+                </div><!--item6-->
+
+            </div><!--Grid-->
+        </div><!--PRODUTOS-->
+    </div><!--PetContainer-->
+
+<!-- FOOTER -->
+    <div class="footer">
+        <div class="footerDescricoes">
+            <div class="logo"><!--grid 1-->
+                <img src="./img/logoPurple.svg" alt="">
+                <span></span>
+                <!-- boneco de arrasta pra cima -->
+            </div>
+            <div class="sitemap">
+                <h1> Sitemap</h1>
+                
+                    <a href="/">Perfil</a>
+                    <a href="/">Produtos</a>
+                    <a href="/">Promoções</a>
+                    <a href="/">Meu Carrinho</a>
+                    <a href="/">Pedidos </a>
+                
+            </div>
+            <div class="contato">
+                <h1>Contatos</h1> 
+                <img src="./img/iconeCarrinho.svg" alt="">
+                <img src="./img/iconeCarrinho.svg" alt="">
+                <img src="./img/iconeCarrinho.svg" alt="">
+                <span></span>
+                <h3>.Cadastre-se para receber atualizações e promoções</h3>
+                <input type="email" placeholder="E-mail">
+                <button>Enviar</button>
+            </div>
+        </div>
+        <h3 class="rodape">Todos os direitos reservados ao Mr.Pet</h3>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- <script src="./script.js"></script> -->
+</body>
+</html>

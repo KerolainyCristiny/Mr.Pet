@@ -2,47 +2,51 @@
 
 .petContainer{
   font-family: "Inter";
-  background-color: rgba(72, 62, 109, 0.725);
   overflow-x: hidden;
-
+  margin: 0 15rem;
 }
 
 .titulo{
-  color: #E9C2C5;
+  color: black;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 3rem;
+  
 }
 .titulo h1{
-  margin: 3rem 3rem 0;
-  font-size: 6rem;
+  margin: 0;
+  font-size: 5rem;
   text-transform: uppercase;
-
+  font-weight: 900;
 }
 .titulo h4{
-  margin: 0 3rem;
+  margin: 0 ;
   grid-area: 2;
   align-self: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+
 }
 .titulo img{
   width: 3rem;
-  margin-right: 5rem;
-  grid-row: 2;
   place-self: end;
+  grid-row: 2;
 }
 
 .btnAnimais{
   display: flex;
-  gap: 3rem;
+  gap: 1.5rem;
   text-transform: uppercase;
-  margin: 2rem 2rem 0;
+  margin: 2rem 0;
 }
 
 .btnAnimais a{
   background-color: #E9C2C5;
   text-decoration: none;
-  font-size: 1.3rem;
-  color: #535878;
-  padding: 1.2rem 2.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #06142E;
+  padding: 1rem 2rem;
   border-radius: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
 }

@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Lato:wght@700&display=swap");
+
+.setaVoltar{
+  margin: 0  0 0 18.2rem;
+  width: 2.1rem;
+}
+.breadcrumb {
+  display: flex;
+  margin: 1rem 18rem ;
+}
+.breadcrumb a{
+  text-decoration: none;
+  color: black;
+  font-size: .8rem;
+  font-weight: 700;
+  font-family: "Inter";
+  padding: 0 .4rem;
+}
+.breadcrumb img {
+  cursor: context-menu;
+  height: 1rem;
+  margin: .1rem 0 ;
+}
+
+
+/* gridProdutoValores */
+.gridCentralCarrinho{
+  margin: 3rem 20rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5rem;
+  place-self:center;
+  place-items: center;
+}
+.grid-itens{
+  background: #F5D7DB;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  place-self: start;
+  place-items: start;
+}
+.img-produto{
+  height: 7rem;
+  width: 12rem;
+  padding: .5rem 3rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.grid-descricao-item{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  place-items: start;
+  place-self: center;
+
+}
+.grid-descricao-item h2{
+  display: grid;
+  place-items: end;
+  place-self: end;
+  grid-column: span 2;
+  font-size: 1.5rem;
+}
+.grid-descricao-item h4{
+  font-size: 1.2rem;
+}
+
+.tres-pontos{
+  width: 2rem;
+  margin: 0 0 0 1rem;  
+  cursor: pointer;
+  padding: .5rem;
+}
+
+.quantidade-item{
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  height: 2rem;
+}
+.quantidade-item button{
+  background: #b7b7b7;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Inter";
+  text-align: center;  
+}
+.quantidade-item .menos{
+  border-radius: 7px 0 0 7px ;
+}
+.quantidade-item .mais{
+  border-radius: 0 7px 7px 0 ;
+}
+.quantidade-item .contador{
+  padding:.2rem .5rem;
+  font-weight: 700;
+  font-family: "Inter";
+  text-align: center;
+}
+
+/* Grid 2 - informações de valores */
+
+.grid-valoresCompra{
+  display: grid;
+  font-family: "Inter";
+}
+.frete{
+  background: #cac9c99c;
+  margin: 0 0 .5rem 0;
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap:0 .5rem ;
+  border-radius: 20px;
+}
+.frete h4{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* .frete h6{
+  font-size: .6rem;
+  font-weight: 700;
+  align-self: end;
+  margin-top: .5rem;
+  padding: .2rem;
+  cursor: pointer;
+} */
+.frete input{
+  grid-column: 1;
+  border: 1px black solid;
+  background: none;
+  padding: .5rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.frete button{
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background: white;
+  font-weight: 700;
+}
+.resumo-pedido{
+  background: #cac9c99c;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.resumo-pedido .titulo{
+  display: grid;
+  grid-template-columns: 75% 25%;
+  padding: .5rem;
+}
+.resumo-pedido .titulo h4{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.resumo-pedido .titulo h6{
+  font-size: .7rem;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+.divider-resumo-pedido {
+  content: "";
+  padding: 1px 0;
+  display: block;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.resumo-pedido .descricao h4{
+  margin: .5rem 0;
+  font-size: 1rem;
+  color: #6C6666;
+  font-weight: 700;
+}
+.resumo-pedido .descricao .destaque{
+  color: black;
+}
+.resumo-pedido #valores{
+  display: grid;
+  place-self: end;
+  place-items: end;
+  margin-right: 1.2rem;
+}
+.resumo-pedido .total{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.resumo-pedido .total h3{
+  margin: .5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.total .botoes-carrinho{
+  grid-column: span 2;
+}
+.total .botoes-carrinho a{
+  display: grid;
+  margin: .5rem 2rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.a-finalizar{
+  color: rgba(0, 0, 0, 0.74);
+  border-radius: 20px;
+  background: white;
+  padding: .3rem ;
+  font-size: 1.1rem;
+}
+.a-continuar{
+  background: #FFF0F0;
+  font-size: .8rem;
+  padding: .3rem ;
+  border-radius: 15px;
+  color: #000
+
+}
+
+.cupom{
+  background: #cac9c99c;
+  padding: 2rem;
+  margin-top: .5rem;
+  border-radius: 20px;
+}

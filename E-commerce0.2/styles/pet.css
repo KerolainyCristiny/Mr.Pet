@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lato:wght@700&display=swap');
+
+.petContainer{
+  font-family: "Inter";
+  overflow-x: hidden;
+  margin: 0 18rem;
+}
+
+.petContainer .titulo{
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+  
+}
+.petContainer .titulo h1{
+  margin: 4rem 0 0 0;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.petContainer .titulo h2{
+  margin: 0;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.petContainer .titulo h4{
+  margin: 0 ;
+  grid-area: 2;
+  align-self: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+}
+.petContainer .titulo img{
+  width: 3rem;
+  place-self: end;
+  grid-row: 2;
+}
+
+.petContainer .btnAnimais{
+  display: flex;
+  gap: 1.5rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.petContainer .btnAnimais a{
+  background-color: #E9C2C5;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #06142E;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+}

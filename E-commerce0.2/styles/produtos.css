@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Lato:wght@700&display=swap');
+
+.produtos{ 
+  /* posicionamento de tela */
+  margin-bottom: 500px;
+  display: grid;
+  place-items: center;
+  place-self: center;
+  margin: 0 15rem;
+}
+
+.gridProdutos{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+}
+
+.item{
+  /* tamanho da caixa */
+  font-family: "Inter";
+  padding: 2rem;
+  border-radius: 20px;
+}
+.imgProduto{
+  display: grid;
+  grid-template-columns: 80% 20%;
+
+}
+.imgItem{
+  place-self: center;
+  width: 60%;
+}
+.favorito{
+  place-self: end;
+}
+.spanProduto{
+  content: "";
+  background: #06142ec7;
+  padding: .07rem ;
+  display: grid;
+  border-radius: 4px;
+  margin: .5rem 0;
+}
+.descricao{
+  /* bloco de descrição, add grid 2 clum, a primeira pega tudo, 2row valores - Iconfav */
+  display: grid;
+  grid-template-columns: 70% 30%;
+  place-items: start;
+  place-self: center;
+
+}
+.descricao h3{
+  grid-column: span 2;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: start;
+}
+.valores{
+  grid-area: 2;
+  place-items: center;
+  place-self: start;
+  line-height:.2rem;
+}
+.valores h1{
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #F4705B;
+}
+.valores h4{
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.valorOriginal{
+  color:#98747C;
+}
+.descricao a {
+  background: #06142E;
+  color: white;
+  text-decoration: none;
+  padding: .5rem;
+  grid-row: 2;
+  align-self: end;
+  justify-self: start;
+  font-size: .9rem;
+  border-radius: .8rem;
+  text-align: center;
+  font-weight: 400;
+}

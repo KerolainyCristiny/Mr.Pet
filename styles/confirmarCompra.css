@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+}
+
+#seta{
+    margin-top: 273px;
+    margin-left: 320px;
+}
+
+#migalha{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 285px;
+}
+
+.setaParaDireita{
+    margin-top: 5px;
+}
+
+.ajuste-migalha{
+   margin-left: -35px;
+}
+
+a {
+    text-decoration: none;
+    color: #06142E;
+}

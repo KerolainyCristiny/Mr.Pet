@@ -1,0 +1,29 @@
+#fraseEndereco{
+    font-size: 20px;
+    font-family: bold;
+    margin-top: -15px;
+    margin-left: 39px;
+}
+
+#escolhaEntrega{
+    width: 131px;
+    height: 114px;
+    margin-left: 438px;
+    margin-top: -202px;
+}
+
+.salvarComo{
+    font-size: 25px;
+    font-family: black;
+    width: max-content;
+}
+
+.bolinha{
+    width: 20px;
+    right: 20px;
+}
+
+.escolha{
+    font-size: 24px;
+    margin-top: -10px;
+}

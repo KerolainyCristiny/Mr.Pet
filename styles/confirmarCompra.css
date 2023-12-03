@@ -146,9 +146,73 @@ a {
 
 #resumoPedido{
     display: flex;
-    margin-left: 705px;
+    margin-left: 1025px;
     margin-top: -886px;
     font-size: 32px;
     font-family: black;
     width: max-content;
 }
+
+#div-container{
+    margin-left: 1015px;
+    margin-top: -15px;
+}
+
+.grid{
+    background: #FAF4F4;
+    width: 450px;
+    height: 116px;
+    border-radius: 5px;
+    font-family: bold;
+    margin-top: -18px;
+    margin: 9px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.posicaoText{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.posicaoTextDireita{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.texto{
+    font-size: 24px;
+    font-family: bold;
+}
+
+.textoD{
+    font-size: 24px;
+}
+
+.TextValor{
+    font-size: 20px;
+}
+
+#textTotal{
+    font-size: 40px;
+    font-family: black;
+    margin-top: 25px;
+}
+
+.TextValorF{
+    font-size: 35px;
+    font-family: black;
+    margin-top: 18px;
+    margin-left: -55px;
+    display: flex;
+}
+
+.Text4x{
+    display: flex;
+    font-size: 20px;
+    width: max-content;
+    margin-top: -28px;
+    margin-left: -130px;
+}
+

@@ -25,4 +25,130 @@ body{
 a {
     text-decoration: none;
     color: #06142E;
+    font-size: 24px;
+}
+
+#confirmar-compra{
+    margin-top: 40px;
+    font-size: 80px;
+    margin-left: 320px;
+    font-family: black;
+}
+
+#conjuntoBotoes{
+    display: flex;
+    margin-left: 280px;
+    margin-top: 55px;
+}
+
+.botao{
+    height: 92px;
+    color: #F5D7DB;
+    background: #06142E;
+    border-radius: 20px;
+    font-size: 32px;
+    font-family: Arial;
+}
+
+#blocoConfirmeDados{
+    margin-left: 320px;
+    margin-top: 82px;
+    width: 630px;
+    height: 884px;
+    background: #F5D7DB;
+    border-radius: 10px;
+}
+
+#confirmeDados{
+    display: flex;
+    margin-top: 39px;
+    margin-left: 39px;
+    font-size: 30px;
+    font-family: 'Inter';
+}
+
+.preenchimentoDados{
+    width: 564px;
+    height: 41px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin: 25px;
+}
+
+.preenchimentoDados p{
+    color: rgb(150, 148, 148);
+    font-family: 'Arial';
+    font-size: 20px;
+    padding-left: 33px;
+    padding-top: 10px;
+}
+
+.preenchimentoDados1{
+    width: 381px;
+    height: 41px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin: 25px;
+}
+
+.preenchimentoDados1 p{
+    color: rgb(150, 148, 148);
+    font-family: 'Arial';
+    font-size: 20px;
+    padding-left: 33px;
+    padding-top: 10px;
+}
+
+#regraSenha{
+    width: 131px;
+    height: 114px;
+    margin-left: 438px;
+    margin-top: -130px;
+}
+
+.estiloSenha{
+    font-size: 13px;
+}
+
+#alterarEmail{
+    display: flex;
+    font-size: 15px;
+    margin-left: 29px;
+    margin-top: 40px;
+    color: #F4705B;
+    border-bottom: 2px solid #F4705B;
+    width: max-content;
+}
+
+#alterarEmail1{
+    color: #F4705B;
+    border-bottom: 2px solid #F4705B;
+    width: max-content;
+    font-size: 15px;
+}
+
+#fraseFinal{
+    margin-left: 29px;
+}
+
+#botaoCriarConta{
+    margin-left: 315px;
+    margin-top: 107px;
+    font-size: 40px;
+    background: #F4705B;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+#resumoPedido{
+    display: flex;
+    margin-left: 705px;
+    margin-top: -886px;
+    font-size: 32px;
+    font-family: black;
+    width: max-content;
 }

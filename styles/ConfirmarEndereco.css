@@ -1,0 +1,112 @@
+#blocoConfirmeEndereco{
+    margin-left: 320px;
+    margin-top: 82px;
+    width: 630px;
+    height: 960px;
+    background: #F5D7DB;
+    border-radius: 10px;
+}
+
+#fraseEndereco{
+    font-size: 20px;
+    font-family: bold;
+    margin-top: -15px;
+    margin-left: 39px;
+}
+
+#escolhaEntrega{
+    width: 131px;
+    height: 114px;
+    margin-left: 438px;
+    margin-top: -202px;
+}
+
+.salvarComo{
+    font-size: 25px;
+    font-family: black;
+    width: max-content;
+}
+
+.bolinha{
+    width: 20px;
+    right: 20px;
+}
+
+.escolha{
+    font-size: 24px;
+    margin-top: -10px;
+}
+
+#botaoEndereco{
+    background: #06142E;
+    color: white;
+    border: none;
+    width: 183px;
+    right: 58px;
+    font-family: bold;
+    font-size: 24px;
+    margin-left: 27px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 110px;
+    display: flex;
+}
+
+#container-botao{
+    display: flex;
+    margin-left: 180px;
+    margin-top: 70px;
+    
+}
+
+#botaoCancelar{
+    font-size: 40px;
+    background: #06142E;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin: 15px;
+    padding: 10px;
+
+}
+
+#botaoProximo{
+    font-size: 40px;
+    background: #F4705B;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin: 15px;
+    padding: 10px;
+}
+
+#resumoPedido1{
+    display: flex;
+    margin-left: 1025px;
+    margin-top: -966px;
+    font-size: 32px;
+    font-family: black;
+    width: max-content;
+}
+
+#div-container1{
+    margin-left: 1015px;
+    margin-top: -15px;
+}
+
+.preenchimentoDados1{
+    width: 381px;
+    height: 41px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin: 25px;
+}
+
+.preenchimentoDados1 p{
+    color: rgb(150, 148, 148);
+    font-family: 'Arial';
+    font-size: 20px;
+    padding-left: 33px;
+    padding-top: 10px;
+}

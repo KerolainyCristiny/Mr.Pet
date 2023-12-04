@@ -1,0 +1,132 @@
+#blocoConfirmeFrete{
+    margin-left: 320px;
+    margin-top: 82px;
+    width: 630px;
+    height: 795px;
+    background: #F5D7DB;
+    border-radius: 10px;
+}
+
+#nomeFrete{
+    display: flex;
+    font-size: 40px;
+    font-family: black;
+    margin-left: 42px;
+    margin-top: 58px;
+    width: max-content;
+    height: max-content;
+}
+
+#textFrete{
+  font-size: 20px;
+  font-family: black;
+  margin-left: 42px;
+  margin-top: -250px;
+}
+
+#conjunto-nome{
+    display: flex;
+    font-size: 20px;
+    font-family: black;
+}
+
+#estimativa{
+   margin-left: 65px;
+}
+
+#valor67{
+    margin-left: 132px;
+   
+}
+
+.preenchimentoDados2{
+    width: 593px;
+    height: 80px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin: 25px;
+}
+
+.preenchimentoDados2 p{
+    color: rgb(0, 0, 0);
+    font-family: 'Arial';
+    font-size: 25px;
+    padding-left: 19px;
+    padding-top: 25px;
+}
+
+#escolhaFrete1{
+    color: rgb(0, 0, 0);
+    font-family: 'Arial';
+    font-size: 20px;
+    margin-left: 230px;
+    margin-top: -75px;
+}
+
+#escolhaFrete2{
+    color: rgb(0, 0, 0);
+    font-family: 'Arial';
+    font-size: 20px;
+    margin-left: 230px;
+    margin-top: -75px;
+}
+
+#escolhaFrete3{
+    color: rgb(0, 0, 0);
+    font-family: 'Arial';
+    font-size: 20px;
+    margin-left: 230px;
+    margin-top: -75px;
+}
+
+#valorFrete{
+    color: rgb(0, 0, 0);
+    font-family: 'Arial';
+    font-size: 20px;
+    margin-left: 432px;
+    margin-top: -65px;
+}
+
+.bolinha1{
+    width: 20px;
+    right: 20px;
+    margin-left: 10px;
+}
+
+#container-botaoFrete{
+    display: flex;
+    margin-left: 255px;
+    margin-top: 150px;
+    
+}
+
+#botaoSalvar{
+    font-size: 40px;
+    background: #F4705B;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin: 15px;
+    padding: 13px;
+
+}
+
+#botaoProximo1{
+    font-size: 40px;
+    background: #F4705B;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin: 15px;
+    padding: 13px;
+}
+
+#resumoPedido2{
+    display: flex;
+    margin-left: 1025px;
+    margin-top: -802px;
+    font-size: 32px;
+    font-family: black;
+    width: max-content;
+}

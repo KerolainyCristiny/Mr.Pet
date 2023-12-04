@@ -1,0 +1,61 @@
+#blocoCompra{
+    margin-left: 320px;
+    margin-top: 82px;
+    width: 630px;
+    height: 780px;
+    background: #F5D7DB;
+    border-radius: 10px;
+}
+
+.icone2{
+    margin-left: 10px;
+    margin-top: -45px;
+}
+
+.iconeBoleto{
+    margin-left: 10px;
+    margin-top: -28px; 
+}
+
+.iconePix{
+    margin-left: -79px;
+    margin-top: -45px; 
+}
+
+#container-botaoPagamento{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 100px;
+    
+}
+
+#botaoCancelar{
+    font-size: 40px;
+    background: #06142E;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin: 15px;
+    padding: 13px;
+
+
+}
+
+#botaoCompra{
+    font-size: 40px;
+    background: #F4705B;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin: 15px;
+    padding: 13px;
+}
+
+#resumoPedido3{
+    display: flex;
+    margin-left: 1025px;
+    margin-top: -787px;
+    font-size: 32px;
+    font-family: black;
+    width: max-content;
+}

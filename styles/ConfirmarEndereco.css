@@ -93,3 +93,20 @@
     margin-left: 1015px;
     margin-top: -15px;
 }
+
+.preenchimentoDados1{
+    width: 381px;
+    height: 41px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin: 25px;
+}
+
+.preenchimentoDados1 p{
+    color: rgb(150, 148, 148);
+    font-family: 'Arial';
+    font-size: 20px;
+    padding-left: 33px;
+    padding-top: 10px;
+}

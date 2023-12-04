@@ -1,0 +1,15 @@
+.margem{
+    display: grid;
+    margin: auto;
+    width: 1000px;
+    place-items: center;
+}
+
+.Gatinho{
+    display: grid;
+    margin: auto; 
+    place-self: start; 
+
+}
+
+

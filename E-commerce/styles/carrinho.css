@@ -1,0 +1,251 @@
+/* gridProdutoValores */
+.gridCentralCarrinho {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  place-items: center;
+  max-width: 1000px;
+  margin: 3rem auto;
+}
+.gridCentralCarrinho .grid-itens {
+  background: #f5d7db;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  place-self: start;
+  height: 7rem;
+}
+.gridCentralCarrinho .grid-itens .img-produto {
+  height: 7rem;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.gridCentralCarrinho .grid-itens .grid-descricao-item {
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  place-items: start;
+  place-self: center;
+}
+.gridCentralCarrinho .grid-itens .grid-descricao-item h2 {
+  display: grid;
+  place-items: end;
+  place-self: end;
+  grid-column: span 2;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #eb7156;
+}
+.gridCentralCarrinho .grid-itens .grid-descricao-item h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e8755c;
+}
+
+.gridCentralCarrinho .grid-itens .tres-pontos {
+  width: 2rem;
+  margin: 0 0 0 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.gridCentralCarrinho .grid-itens .grid-descricao-item .quantidade-item {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  height: 2rem;
+}
+.gridCentralCarrinho .grid-itens .grid-descricao-item .quantidade-item button {
+  background: #6c6666;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Inter";
+  text-align: center;
+}
+.gridCentralCarrinho .grid-itens .grid-descricao-item .quantidade-item .menos {
+  border-radius: 10px 0 0 10px;
+}
+.gridCentralCarrinho .grid-itens .grid-descricao-item .quantidade-item .mais {
+  border-radius: 0 10px 10px 0;
+}
+.gridCentralCarrinho
+  .grid-itens
+  .grid-descricao-item
+  .quantidade-item
+  .contador {
+  padding: 0.2rem 0.5rem;
+  font-weight: 700;
+  font-family: "Inter";
+  text-align: center;
+}
+
+/* Grid 2 - informações de valores */
+
+.gridCentralCarrinho .grid-valoresCompra {
+  display: grid;
+  font-family: "Inter";
+  place-self: end;
+}
+
+.gridCentralCarrinho .grid-valoresCompra .resumo-pedido .titulo h4 {
+  font-weight: 900;
+  font-size: 1.4rem;
+  margin-left: 2.5rem;
+}
+.gridCentralCarrinho .grid-valoresCompra .resumo-pedido .titulo h6 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+/* .gridCentralCarrinho .grid-valoresCompra .divider-resumo-pedido {
+  content: "";
+  padding: 1px 0;
+  display: block;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+} */
+
+.gridCentralCarrinho .grid-valoresCompra .resumo-pedido .descricao {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0.4rem 0;
+  padding: 0.7rem 2.5rem;
+  background: #faf4f4;
+}
+.gridCentralCarrinho .grid-valoresCompra .resumo-pedido #first {
+  border-radius: 20px 20px 0 0;
+}
+.gridCentralCarrinho .grid-valoresCompra .resumo-pedido .descricao h3 {
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  /* color: #6c6666; */
+  font-weight: 900;
+}
+.gridCentralCarrinho .grid-valoresCompra .resumo-pedido .descricao h4 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  /* color: #6c6666; */
+  font-weight: 700;
+}
+.gridCentralCarrinho .grid-valoresCompra .resumo-pedido #cores {
+  color: #6c6666;
+}
+.gridCentralCarrinho .grid-valoresCompra .resumo-pedido #valores {
+  display: grid;
+  place-self: end;
+  place-items: end;
+  /* margin-right: 1.2rem; */
+}
+.gridCentralCarrinho .grid-valoresCompra .resumo-pedido #valor-destaque {
+  font-size: 1.3rem;
+  display: grid;
+  place-self: end;
+  place-items: end;
+  font-weight: 700;
+}
+.gridCentralCarrinho .grid-valoresCompra .resumo-pedido .botoes-carrinho {
+  display: grid;
+  margin: 0 0 0 1rem;
+  background: #faf4f4;
+  margin: 0.4rem 0 1rem;
+  padding: 0.7rem;
+  border-radius: 0 0 20px 20px;
+  grid-column: span 2;
+}
+.gridCentralCarrinho .grid-valoresCompra .resumo-pedido .botoes-carrinho a {
+  display: grid;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.gridCentralCarrinho
+  .grid-valoresCompra
+  .resumo-pedido
+  .botoes-carrinho
+  .a-finalizar {
+  color: white;
+  border-radius: 20px;
+  background: #f4705b;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0.2rem 1.5rem;
+}
+.gridCentralCarrinho
+  .grid-valoresCompra
+  .resumo-pedido
+  .botoes-carrinho
+  .a-continuar {
+  background: #06142e;
+  font-size: 0.8rem;
+  padding: 0.6rem 0;
+  border-radius: 20px;
+  color: white;
+  margin: 0.2rem 1.5rem;
+}
+
+.gridCentralCarrinho .grid-valoresCompra .cupom {
+  /* background: #cac9c99c; */
+  padding: 2rem;
+  margin-top: 0.5rem;
+  border-radius: 20px;
+}
+
+
+.gridCentralCarrinho .grid-valoresCompra .frete {
+  /* background: red; */
+  /* margin: 0 0 0.5rem 0; */
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap:.5rem;
+  border-radius: 20px;
+}
+.gridCentralCarrinho .grid-valoresCompra .frete h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  /* margin: 0 0  2rem 0 ; */
+}
+.frete h6{
+  font-size: .7rem;
+  font-weight: 700;
+  align-self: end;
+  margin: .2rem 0 0 0;
+  padding: 0 .3rem;
+  cursor: pointer;
+}
+.gridCentralCarrinho .grid-valoresCompra .frete input {
+  grid-column: 1;
+  border: 3px black solid;
+  background: none;
+  padding: 0.7rem;
+  border-radius: 12px;
+  font-weight: 700;
+}
+.gridCentralCarrinho .grid-valoresCompra .frete button  {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background: #f4705b;
+  font-weight: 700;
+  color: white;
+  padding: .7rem 0;
+}
+
+.frase-produto{
+  display: flex;
+  max-width: 1000px;
+  margin: 3rem auto 0;
+}
+.frase-produto h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.frase-produto img{
+  height: 100%;
+  margin: .2rem;
+}

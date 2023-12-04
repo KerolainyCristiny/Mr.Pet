@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/pedidos.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="icon" href="./img/logoPurpleico.ico">
+    <title>Pedidos</title>
+</head>
+
+<body>
+    <!-- MENU HEADER -->
+    <div class="header">
+        <div class="conteudo">
+            <a href="./index.html"><img class="logoHome" src="img/logo.svg" alt=""></a>
+            <div class="barraPesquisa">
+                <img src="./img/iconePesquisa.svg" alt="">
+                <input type="text" name="barra-pesquisa">
+            </div>
+
+            <div class="gridMenu">
+                <a href="/carrinho.html"><img class="iconeCarrinho" src="./img/iconeCarrinho.svg" alt=""></a>
+                <a href="./perfil.html"><img class="iconePerfil" src="./img/IconePerfil.svg" alt=""></a>
+
+
+                <!-- MENU LATERAL ESQUERDA <- -->
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="iconeMenu" src="./img/menuHamburger.svg" alt=""></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        ...
+                    </div>
+                </div>
+
+            </div><!--gridMenu-->
+        </div><!--conteudo-->
+    </div><!-- header -->
+
+
+
+
+
+    <div class="st-voltar">
+        <a class="st" href="./index.html">
+            <img class="setaVoltar" src="./img/setaVoltar.svg" alt="Voltar">
+        </a>
+        <span></span>
+    </div>
+    <div class="breadcrumb">
+        <a href="./index.html">Home</a>
+        <img src="./img/setaBreadcrumb.svg" alt="">
+        <a href="./produtos.html">Pedido</a>
+    </div>
+
+    <div class="tituloContainer">
+        <div class="titulo">
+            <h1>Pedidos</h1>
+            <h4>Pets</h4>
+        </div>
+    </div>
+    
+    <div class="container-conteudo">
+
+        <h2 class="frase"><img src="/img/bolinha.svg" alt="bolinha"> Processando</h2>
+        <p id="frasePedido">Pedido: #CK10KM1000</p>
+        <div class="container-grid">
+            <div>
+                <img id="imagemProduto" src="/img/imagemProduto-removebg-preview.png" alt="Ração para gato">
+            </div>
+            <div class="fraseTextoPedido">
+                <p>Tempo estimado de envio: Cerca de 23 abr. 2023 - 29 abr. 2023</p>
+                <p>Forma Pagamento: Crédito 2x</p>
+                <p>Forma envio: SEDEX</p>
+                <p>Pedido realizado: 01 abr. 2023 10:30:52</p>
+            </div>
+        </div>
+        <h2 id="total">Total: 150.99</h2>
+    </div>
+
+    <div id="botao">
+        <button id="cancelar">Cancelar</button>
+        <button id="rastrear">Rastrear</button>
+        <button id="recebido">Recebido</button>
+    </div>
+
+
+    <div><img id="pata1" src="/img/pata.svg" alt="pata preta"></div>
+
+    <div><img id="pata2" src="/img/pata2.svg" alt="pata rosa"></div>
+
+    <div><img id="pata3" src="/img/pata2.svg" alt="pata rosa"></div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footerDescricoes">
+            <div class="logo"><!--grid 1-->
+                <img src="./img/logoPurple.svg" alt="">
+                <!-- boneco de arrasta pra cima -->
+            </div>
+            <div class="sitemap">
+                <a href="/">Perfil</a>
+                <a href="/">Produtos</a>
+                <a href="/">Promoções</a>
+                <a href="/">Meu Carrinho</a>
+                <a href="/">Pedidos </a>
+
+            </div>
+            <div class="contato">
+                <h1>Contatos</h1>
+                <img src="./img/iconeCarrinho.svg" alt="">
+                <img src="./img/iconeCarrinho.svg" alt="">
+                <img src="./img/iconeCarrinho.svg" alt="">
+                <h3>.Cadastre-se para receber atualizações e promoções</h3>
+                <input type="email" placeholder="E-mail">
+                <button>Enviar</button>
+            </div>
+        </div>
+        <h3 class="rodape">Todos os direitos reservados ao Mr.Pet</h3>
+    </div>
+
+    <script src="./jquery-3.3.1.slim.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./bootstrap.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

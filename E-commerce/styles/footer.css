@@ -1,0 +1,123 @@
+
+
+.rodape{
+  height: 20rem;
+  background-color: #FEE1DD;
+ 
+}
+.footerDescricoes{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  font-family: "inter";
+  max-width: 1000px;
+  place-items: center;
+  margin: 3rem auto 0;
+}
+
+
+.logo img{
+  width: 10rem;
+ 
+}
+
+.sitemap{
+  color: #4d537a;
+  margin-top: 3rem;
+  place-self: start;
+}
+.sitemap a{
+
+  text-decoration: none;
+  /* text-transform: ; */
+  color: #06142E;
+  padding: .3rem;
+  transition: .3s;
+  display: flex;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.sitemap a:hover{
+  color: #FEE1DD;
+  text-decoration: overline;
+  background-color: #06142eb6;
+  border-radius: 10px;
+}
+
+
+.contato{
+  /* mudar a direção do texto */
+  direction: rtl; 
+  margin: 2rem 0;
+}
+.contato h1{
+  font-weight: 900;
+}
+.contato h3{
+  font-weight: 400;
+}
+.contato span{
+  display: grid;
+  content: "";
+  background: #06142E;
+  padding: .1rem;
+  width: 15rem;
+  height: 5px;
+  border-radius: 4px;
+}
+.contato img{
+  width: 2.5rem;
+  /* margin: 0 0 0 .8rem; */
+}
+.contato h3{
+  color: #06142E;
+  font-size: .8rem;
+  font-weight: 700;
+  margin-top: 10px ;
+}
+.contato input{
+  width: 22rem;
+  height: 2.5rem;
+  border-radius: 15px;
+  border: 1.5px #fff solid;
+  /* box-shadow: 2px 2px .5px rgba(0, 0, 0, 0.1); */
+  direction: ltr ;
+  unicode-bidi: plaintext;
+  font-family: "Inter";
+  color: rgb(48, 47, 47);
+  font-weight: 400;
+  padding: .5rem;
+}
+.contato input::placeholder{
+  font-weight: 400;
+  font-size: 1rem;
+}
+.contato input:focus{
+  outline: none;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.2);
+}
+.contato button{
+  display: flex;
+  margin: .5rem 0 ;
+  padding: .3rem 2rem; 
+  background: #06142E;
+  border-radius: 20px;
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 700;
+  border: none;
+}
+.contato button:hover{
+  border: 1px #2d30467c solid;
+  box-shadow: 5px 7px 10px #2d304660;
+}
+
+.direitosReservados{
+  font-family: "Inter";
+  font-size: .8rem;
+  font-weight: 700;
+  color: #06142E;
+  display: grid;
+  place-items: center;
+  grid-column: 2;
+  z-index: 1;
+}

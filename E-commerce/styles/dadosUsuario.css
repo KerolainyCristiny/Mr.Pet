@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Lato:wght@700&display=swap');
+
+
+.dadosUsuario {
+font-family: "inter";
+  overflow-x: hidden;
+  display: grid;
+  place-self: center;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.dadosUsuario .titulo h1{
+  color: black;
+  display: grid;
+  font-size: 4rem;
+}
+
+.dadosUsuario .titulo .subtitulo img {
+  cursor: context-menu;
+  height: 20px;
+  margin: 4px;
+}
+
+.dadosUsuario .titulo .subtitulo h4 {
+  margin-top: 5px;
+  cursor: pointer;
+}
+.dadosUsuario .dados {
+  justify-self: start;
+  /* background: #f5f5f5; */
+  /* border-radius: 15px; */
+  padding: 1rem;
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* place-self: start; */
+  font-family: "inter";
+}
+
+.dadosUsuario .dados h2{
+  font-weight: 700;
+  font-family: "inter";
+}
+.dadosUsuario .dados h3{
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "inter";
+}
+
+.dadosUsuario .dados h4{
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 1rem 0;
+  font-family: "inter";
+}
+.dadosUsuario .dados button {
+  background-color: #bbb9b9;
+  color: black;
+  margin: 20px 0;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  width: 200px;
+  /* margin-left: 50px; */
+}
+.dados img {
+  border-radius: 20rem;
+  width: 9rem;
+  margin:1rem ;
+  place-self: start;
+}

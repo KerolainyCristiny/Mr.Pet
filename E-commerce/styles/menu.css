@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #06142e;
+  padding: 0.5rem;
+  max-height: 9rem;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 3rem;
+}
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  max-width: 1000px;
+}
+.conteudo img {
+  
+  display: block;
+}
+
+.logoHome {
+  /* margin: 0 0 0 15rem; Espaçamento real de 300px é 18rem */
+  width: 4.5rem;
+  /* justify-self: center; */
+}
+
+.barraPesquisa {
+  background: #b7b7b7;
+  border-radius: 20px;
+  display: flex;
+  place-self: center;
+  place-items: center;
+  width: 80%; 
+}
+.barraPesquisa img {
+  padding: 0.4rem;
+  width: 2rem;
+}
+.barraPesquisa input {
+  width: 80%; 
+  padding: 0.3rem;
+  background: #b7b7b7;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-family: "inter";
+  font-weight: 400;
+  color: black;
+}
+.barraPesquisa input:focus {
+  outline: none;
+}
+
+.gridMenu {
+  display: flex;
+  gap: 0.5rem;
+  place-items: start;
+  place-self: center;
+  
+}
+.iconeCarrinho {
+  width: 3rem;
+ 
+  padding: 0.5rem;
+}
+
+.iconePerfil {
+  width: 6.5rem;
+  align-items: end;
+  place-self: center;
+  padding: 0.5rem;
+}
+/* MENU HAMBURGER */
+.iconeMenu {
+  width: 2.2rem;
+  
+}

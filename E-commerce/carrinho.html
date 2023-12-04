@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" href="./img/logoPurpleico.ico">
+  <title>Meu Carrinho</title>
+</head>
+
+<body>
+  <!-- MENU HEADER -->
+  <div class="header">
+    <div class="conteudo">
+      <a href="./index.html"><img class="logoHome" src="img/logo.svg" alt=""></a>
+      <div class="barraPesquisa">
+        <img src="./img/iconePesquisa.svg" alt="">
+        <input type="text" name="barra-pesquisa">
+      </div>
+
+      <div class="gridMenu">
+        <a href="./carrinho.html"><img class="iconeCarrinho" src="./img/iconeCarrinho.svg" alt=""></a>
+        <a href="./perfil.html"><img class="iconePerfil" src="./img/IconePerfil.svg" alt=""></a>
+
+        <!-- MENU LATERAL ESQUERDA <- -->
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img class="iconeMenu" src="./img/menuHamburger.svg" alt=""></button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- header -->
+
+  <div class="st-voltar">
+    <a class="st" href="./index.html">
+      <img class="setaVoltar" src="./img/setaVoltar.svg" alt="Voltar">
+    </a>
+    <span></span>
+  </div>
+  <!-- breadcrumb -->
+  <div class="breadcrumb">
+    <a href="./index.html">Home</a>
+    <img src="./img/setaBreadcrumb.svg" alt="">
+    <a href="./produtos.html">Produtos</a>
+    <img src="./img/setaBreadcrumb.svg" alt="">
+    <a href="">Sache</a>
+    <img src="./img/setaBreadcrumb.svg" alt="">
+    <a href="">Confirmação</a>
+    <img src="./img/setaBreadcrumb.svg" alt="">
+    <a href="./carrinho.html">Meu Carrinho</a>
+  </div><!-- breadcrumb -->
+
+  <!-- gridProdutoValores -->
+  <div class="gridCentralCarrinho">
+    <div class="grid-itens">
+      <!-- tem como o usuario selecionar um item da pagina produto e esse item chegar na tela carrinho??? -->
+      <img class="img-produto" src="./img/racao.jpg" alt="Racao ....">
+      <div class="grid-descricao-item">
+        <h4>Ração Exemplo</h4>
+        <img class="tres-pontos" src="./img/3pontinhos.svg" alt="Mais opções">
+        <div class="quantidade-item">
+          <button class="menos">-</button>
+          <div class="contador">1</div>
+          <button class="mais">+</button>
+        </div>
+        <h2 class="valor-produto">1.50</h2>
+      </div>
+    </div>
+
+    <div class="grid-valoresCompra">
+      
+      <div class="resumo-pedido">
+        <div class="titulo">
+          <h4>Resumo do Pedido</h4>
+        </div>
+
+        <div class="descricao" id="first">
+          <h4>Produtos(x itens)</h4>
+          <h4 id="valor-destaque">R$ xx,xx</h4>
+        </div>
+        <div class="descricao" id="cores">
+          <h4>Descontos</h4>
+          <h4 id="valores" >-R$ xx,xx</h4>
+        </div>
+        <div class="descricao">
+          <h4 class="destaque">Subtotal</h4>
+          <h4 class="destaque"  id="valores">R$ xx,xx</h4>
+        </div>
+        <div class="descricao" id="cores">
+          <h4>Frete</h4>
+          <h4 id="valores">à calcular</h4>
+        </div>
+        <div class="descricao">
+          <h3>Total</h3>
+          <h3 id="valor-destaque">R$ xx,xx</h3>
+        </div>
+        
+          
+          <div class="botoes-carrinho">
+            <a class="a-finalizar" href="./">Finalizar Compra</a>
+            <a class="a-continuar" href="./produtos.html">Escolher mais produtos</a>
+          </div>
+        
+      </div>
+      <div class="frete">
+        <h4>Calcular seu frete</h4>
+        <h6>Não sei meu cep</h6>
+        <input type="text" placeholder="Digite seu CEP">
+        <button>Calcular</button>
+      </div>
+      <div class="cupom frete">
+        <input type="text" placeholder="Cupom">
+        <button>Aplicar</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="frase-produto">
+  <h2 class="intro-produto">Amplie o leque de produtos das marcas favoritas do seu bichinho! </h2>
+  <img src="./img/patas-frase.png" alt="">
+</div>
+
+
+  <div class="produto"><!--limite de posicionamento geral-->
+    <div class="gridProdutos"><!--divisão do grid-->
+
+      <div class="item 1"><!--config do produto-->
+        <div class="imgProduto">
+            <img class="imgItem" src="./img/racao.jpg" alt="">
+            <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+        </div>
+        <span class="spanProduto"></span>
+        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+            <h3>Nome Produto</h3>
+
+            <div class="valores"><!--posicionamento dos valores-->
+                <h4 class="valorOriginal"><s>R$ 99.99</s></h4>
+                <h1>R$ 79.90</h1>
+                <h4>ou 4x de R$19.99</h4>
+            </div><!--valores-->
+            <a href="/">Comprar</a>
+        </div>
+    </div><!--item1-->
+
+    <div class="item 2"><!--config do produto-->
+        <div class="imgProduto">
+            <img class="imgItem" src="./img/racao.jpg" alt="">
+            <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+        </div>
+        <span class="spanProduto"></span>
+        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+            <h3>Nome Produto</h3>
+            <div class="valores"><!--posicionamento dos valores-->
+                <h4 class="valorOriginal"><s>R$ 99.99</s></h4>
+                <h1>R$ 79.90</h1>
+                <h4>ou 4x de R$19.99</h4>
+            </div><!--valores-->
+            <a href="/">Comprar</a>
+        </div>
+    </div><!--item2-->
+
+    <div class="item 3"><!--config do produto-->
+        <div class="imgProduto">
+            <img class="imgItem" src="./img/racao.jpg" alt="">
+            <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+        </div>
+        <span class="spanProduto"></span>
+        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+            <h3>Nome Produto</h3>
+            <div class="valores"><!--posicionamento dos valores-->
+                <h4 class="valorOriginal"><s>R$ 99.99</s></h4>
+                <h1>R$ 79.90</h1>
+                <h4>ou 4x de R$19.99</h4>
+            </div><!--valores-->
+            <a href="/">Comprar</a>
+        </div>
+    </div><!--item3-->
+    </div><!--Grid-->
+  </div><!--PRODUTOS-->
+
+
+  <!-- FOOTER -->
+  <div class="rodape">
+    <div class="footerDescricoes">
+      <div class="logo"><!--grid 1-->
+        <img src="./img/logoFooter.svg" alt="">
+        <!-- <span></span> -->
+        <!-- boneco de arrasta pra cima -->
+      </div>
+      <div class="sitemap">
+
+        <a href="/">Perfil</a>
+        <a href="/">Produtos</a>
+        <a href="/">Promoções</a>
+        <a href="/">Meu Carrinho</a>
+        <a href="/">Pedidos </a>
+
+      </div>
+      <div class="contato">
+        <h1>Contatos</h1>
+        <img src="./img/iconeCarrinho.svg" alt="">
+        <img src="./img/iconeCarrinho.svg" alt="">
+        <img src="./img/iconeCarrinho.svg" alt="">
+        <span></span>
+        <h3>.Cadastre-se para receber atualizações e promoções</h3>
+        <input type="email" placeholder="E-mail">
+        <button>Enviar</button>
+      </div>
+    </div>
+    <h3 class="direitosReservados">Todos os direitos reservados ao Mr.Pet</h3>
+  </div>
+
+  <script src="./jquery-3.3.1.slim.min.js"></script>
+  <script src="./popper.min.js"></script>
+  <script src="./bootstrap.min.js"></script>
+  <script src="./bootstrap.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

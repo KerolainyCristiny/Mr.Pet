@@ -1,0 +1,113 @@
+.container-conteudo {
+  display: grid;
+  max-width: 1000px;
+  place-items: center;
+  margin: 0 auto 3rem;
+  /*  width: 1300px;
+    height: 486px; */
+  border-radius: 20px;
+  background: red;
+  grid-template-columns: 1fr 2fr;
+  place-self: start;
+}
+/* .frase{
+   margin-left: 30px;
+   margin-top: 25px;
+}  */
+
+.container-grid {
+  display: grid;
+  /* margin-left: -210px;
+  margin-top: 90px; */
+}
+/* 
+#imagemProduto{
+    background: #FFFFFF;
+}
+
+#frasePedido{
+    margin-left: -128px;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+.fraseTextoPedido{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -120px;
+    margin-top: 70px;
+
+}
+
+#total{
+    margin-left: 200px;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+#botao{
+    display: flex;
+    padding: 10px;
+    width: 300px;
+    height: 80px;
+    margin-left: 910px;
+    margin-top: -110px;
+}
+
+#cancelar{
+    background: #06142E;
+    color: white;
+    border-radius: 20px;
+    font-size: 35px;
+    width: 200px;
+    height: 60px;
+    padding: 20px;
+    justify-content: center;
+    margin: 25px;
+}
+
+#recebido{
+    background: #F4705B;
+    color: white;
+    border-radius: 20px;
+    font-size: 35px;
+    width: 200px;
+    height: 60px;
+    padding: 20px;
+    justify-content: center;
+    margin: 25px;
+}
+
+#rastrear{
+    background: #06142E;
+    color: white;
+    border-radius: 20px;
+    font-size: 35px;
+    width: 200px;
+    height: 60px;
+    padding: 20px;
+    justify-content: center;
+    margin: 25px;
+}
+
+#pata1{
+     margin-left: 100px;
+     margin-top: 150px;
+}
+
+#pata2{
+    margin-left: -210px;
+    margin-top: -100px;
+}
+
+#pata3{
+    margin-top: 285px;
+}
+
+.rodape{
+    background: #F5D7DB;
+}
+
+.footer{
+    background: #F5D7DB;
+} */

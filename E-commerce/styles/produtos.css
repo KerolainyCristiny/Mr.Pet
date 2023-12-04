@@ -1,0 +1,94 @@
+
+.produto{ 
+  /* posicionamento de tela */
+  margin-bottom: 500px;
+  display: grid;
+  place-items: center;
+  /* place-self: center; */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.produto .gridProdutos{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 5rem;
+}
+
+.produto .gridProdutos .item{
+  /* tamanho da caixa */
+  font-family: "Inter";
+  padding: 2rem;
+  border-radius: 20px;
+}
+.produto .gridProdutos .item .imgProduto{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: .5rem;
+}
+.produto .gridProdutos .item .imgProduto .imgItem{
+  place-self: end;
+  width: 7rem;
+  
+}
+.produto .gridProdutos .item .imgProduto .favorito{
+  place-self: end;
+  cursor: pointer;
+}
+/* .produto .gridProdutos .item .imgProduto .desfavoritar{
+  place-self: end;
+  display: none;
+} */
+.produto .gridProdutos .item .spanProduto{
+  content: "";
+  background: #06142ec7;
+  padding: .07rem ;
+  display: grid;
+  border-radius: 4px;
+  margin: .5rem 0;
+}
+.produto .gridProdutos .item .descricao{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 0 0 0 1rem;
+}
+.produto .gridProdutos .item .descricao h3{
+  grid-column: span 2;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  
+}
+.produto .gridProdutos .item .descricao .valores{
+  grid-area: 2;
+  place-items: center;
+  place-self: start;
+}
+.produto .gridProdutos .item .descricao .valores h1{
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #F4705B;
+  line-height: 1;
+}
+.produto .gridProdutos .item .descricao .valores h4{
+  line-height: .5;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.produto .gridProdutos .item .descricao .valores .valorOriginal{
+  color:#98747C;
+}
+.produto .gridProdutos .item  .descricao a {
+  background: #06142E;
+  color: white;
+  text-decoration: none;
+  padding: .3rem .5rem;
+  grid-row: 2;
+  align-self: end;
+  justify-self: start;
+  font-size: .7rem;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 400;
+}

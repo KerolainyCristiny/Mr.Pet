@@ -1,0 +1,32 @@
+.favoritos {
+  /* posicionamento de tela */
+  margin-bottom: 500px;
+  display: grid;
+  /* place-items: center; */
+  place-self: center;
+  width: 1000px;
+  margin: 0 auto;
+  font-family: "inter";
+}
+.text {
+  display: flex;
+  gap: 2rem;
+}
+.text1 {
+  place-self: start;
+  display: grid;
+}
+.text2 {
+  margin-right: 20rem;
+  font-size: 15px;
+}
+.text span {
+  content: "";
+  background: black;
+  padding: 2px;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}

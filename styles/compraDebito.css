@@ -1,0 +1,17 @@
+#bloco-containerDebito{
+    margin-left: 320px;
+    margin-top: 82px;
+    width: 640px;
+    height: 760px;
+    background: #F5D7DB;
+    border-radius: 10px;
+}
+
+#resumoPedido5{
+    display: flex;
+    margin-left: 1025px;
+    margin-top: -767px;
+    font-size: 32px;
+    font-family: black;
+    width: max-content;
+}

@@ -1,0 +1,58 @@
+#bloco-containerBoleto{
+    margin-left: 320px;
+    margin-top: 82px;
+    width: 640px;
+    height: 700px;
+    background: #F5D7DB;
+    border-radius: 10px;
+}
+
+#gerarBoleto{
+    font-family: black;
+    font-size: 25px;
+    margin-left: 42px;
+    margin-top: 21px;
+}
+
+#gereBoleto{
+   background: #F8F3F3;
+   margin-top: 73px;
+   margin-left: 42px;
+   width: 224px;
+   height: 78px;
+   border-radius: 20px;
+   padding: 10px;
+}
+
+#fraseGere{
+  font-size: 20px;
+  font-family: black;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+#fotoSeta{
+    margin-left: 90px;
+
+}
+
+#botao-Salvar1{
+    font-size: 40px;
+    background: #F4705B;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin: 15px;
+    padding: 13px;
+    margin-top: 130px;
+    margin-left: 483px;
+}
+
+#resumoPedido6{
+    display: flex;
+    margin-left: 1025px;
+    margin-top: -707px;
+    font-size: 32px;
+    font-family: black;
+    width: max-content;
+}

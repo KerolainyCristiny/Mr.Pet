@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/confirmarCompra.css">
+    <link rel="icon" href="./img/logoPurpleico.ico">
+    <link rel="stylesheet" href="/styles/ConfirmarEndereco.css">
+    <link rel="stylesheet" href="/styles/confirmarFrete.css">
+    <link rel="stylesheet" href="/styles/metodoPagamento.css">
+    <link rel="stylesheet" href="/styles/compraCredito.css">
+    <link rel="stylesheet" href="/styles/compraDebito.css">
+    <link rel="stylesheet" href="/styles/comprarBoleto.css">
+
+    <title>Pagamento</title>
+</head>
+<body>
+        
+
+
+    <!---seta-->
+    <img id="seta" src="/img/seta-para-a-direita 4.svg" alt="seta">
+
+    <!---migalha de pão ?-->
+    <div id="migalha">
+        <ul><a href="#">home</a></ul>
+        <img class="setaParaDireita" src="/img/seta-para-direta.svg" alt="seta-caminho">
+        <ul ><a class="ajuste-migalha" href="">produtos</a></ul>
+        <img class="setaParaDireita" src="/img/seta-para-direta.svg" alt="seta-caminho">
+        <ul><a class="ajuste-migalha" href="">sache</a></ul>
+        <img class="setaParaDireita" src="/img/seta-para-direta.svg" alt="seta-caminho">
+        <ul><a class="ajuste-migalha" href="">confirmação</a></ul>
+        <img class="setaParaDireita" src="/img/seta-para-direta.svg" alt="seta-caminho">
+        <ul><a class="ajuste-migalha" href="">meu carrinho</a></ul>
+        <img class="setaParaDireita" src="/img/seta-para-direta.svg" alt="seta-caminho">
+        <ul><a class="ajuste-migalha" href="">confirmar pedido</a></ul>
+    </div>
+
+    <!--texto confirmar compra-->
+    <h1 id="confirmar-compra">Confirmar Compra</h1>
+
+    <!--conjunto de botões-->
+    <div id="conjuntoBotoes">
+        <ul><button class="botao"><img src="/img/Conta.svg" alt="icone conta">Confime seus dados</button></ul>
+        <ul><button class="botao"><img src="/img/localização.svg" alt="icone localização">Endereço</button></ul>
+        <ul><button class="botao"><img src="/img/caminhao.svg" alt="icone caminhão">Frete</button></ul>
+        <ul><button class="botao"><img src="/img/dinheiro.svg" alt="icone dinheiro">Pagamento</button></ul>
+    </div>
+
+    <!--bloco frete-->
+    <div id="bloco-containerBoleto">
+
+      <div id="confirmeDados"><h2>Metodo de pagamento </h2></div>
+      <p id="fraseEndereco">Escolha um metodo de pagamento</p>
+
+      <div class="preenchimentoDados2">
+        <p>Boleto</p>
+        <p id="valorFrete">
+          <img class="icone2" src="/img/cartao.svg" alt="iconeCartao">
+        </p>
+      </div>
+      <p id="gerarBoleto">Gerar boleto:</p>
+      
+      <div id="gereBoleto">
+          <p id="fraseGere">Gerar boleto</p>
+          <img id="fotoSeta" src="/img/seta-para-baixo.svg" alt="seta para baixo">
+      </div>
+
+     <button id="botao-Salvar1">Salvar</button>
+            
+  </div>
+
+
+    <!--Resumo do pedido-->
+    <h2 id="resumoPedido6">Resumo do Pedido</h2>
+     
+    <div id="div-container1">
+         <div class="grid">
+              <div class="posicaoText">
+                <ul class="texto">Produtos (itens)</ul>
+                <ul class="textoD">Descontos</ul>
+              </div>
+              <div class="posicaoTextDireita">
+                <ul class="TextValor">R$XX,XX</ul>
+                <ul class="TextValor">-R$XX,XX</ul>
+              </div>
+         </div>
+         <div class="grid">
+            <div class="posicaoText">
+                <ul class="texto">Subtotal</ul>
+                <ul class="textoD">Frete</ul>
+              </div>
+              <div class="posicaoTextDireita">
+                <ul class="TextValor">R$XX,XX</ul>
+                <ul class="TextValor">a calcular</ul>
+              </div>
+         </div>
+         <div class="grid">
+            <div class="posicaoText">
+                <ul id="textTotal">Total</ul>
+            </div>
+            <div class="posicaoTextDireita">
+                <ul class="TextValorF">R$XX,XX</ul>
+                <ul class="Text4x">até 4x de R$XX,XX s/ juros</ul>
+              </div>
+         </div>
+    </div>
+
+
+</body>
+</html>

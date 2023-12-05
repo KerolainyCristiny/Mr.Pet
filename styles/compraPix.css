@@ -1,0 +1,47 @@
+#bloco-containerPix{
+    margin-left: 320px;
+    margin-top: 82px;
+    width: 640px;
+    height: 760px;
+    background: #F5D7DB;
+    border-radius: 10px;
+}
+
+#zero{
+    font-size: 20px;
+    margin-left: 42px;
+}
+
+#foto-copia{
+    display: flex;
+    margin-top: -85px;
+    margin-left: 546px;
+}
+
+#QrCode{
+    display: flex;
+    margin-left: 196px;
+    margin-top: 41px;
+}
+
+#botao-Salvar2{
+    display: flex;
+    font-size: 40px;
+    background: #F4705B;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin: 15px;
+    padding: 13px;
+    margin-top: 29px;
+    margin-left: 483px;
+}
+
+#resumoPedido7{
+    display: flex;
+    margin-left: 1025px;
+    margin-top: -768px;
+    font-size: 32px;
+    font-family: black;
+    width: max-content;
+}

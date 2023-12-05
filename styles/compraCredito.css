@@ -1,0 +1,61 @@
+#bloco-containerCredito{
+    margin-left: 320px;
+    margin-top: 82px;
+    width: 640px;
+    height: 1072px;
+    background: #F5D7DB;
+    border-radius: 10px;
+}
+
+#blocoCredito{
+    background: #FAF4F4;
+    width: 593px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 28px;
+    border-radius: 10px;
+}
+
+#parcele{
+    display: flex;
+    font-size: 24px;
+    font-family: black;
+    padding-top: 20px;
+    margin-left: 21px;
+    margin: 21px;
+}
+
+.dividirEM{
+    display: flex;
+}
+
+#bolinhaDivide{
+   margin-left: 15px;
+}
+
+#fraseDivide{
+    font-size: 20px;
+    margin-left: 41px;
+
+}
+
+#botao-Salvar{
+    font-size: 40px;
+    background: #F4705B;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin: 15px;
+    padding: 13px;
+    margin-top: 66px;
+    margin-left: 483px;
+}
+
+#resumoPedido4{
+    display: flex;
+    margin-left: 1025px;
+    margin-top: -1080px;
+    font-size: 32px;
+    font-family: black;
+    width: max-content;
+}

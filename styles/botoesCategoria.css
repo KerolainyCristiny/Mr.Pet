@@ -1,27 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lato:wght@700&display=swap');
 
-.btnCategoria{
-  margin: 0 4rem 3rem;
+/* .botaoCategoria{
+  display: grid;
+} */
+
+.nav {
+  margin: 3rem auto 3rem;
+  place-self: center;
+  place-items: center;
+  max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  gap: 3rem;
+  justify-content: space-between;
   font-family: "Inter";
-  color: #CEA0AA ;
-  text-transform: uppercase;
-  /* place-items: start;
-  place-self: start; */
+  
 }
 
-.btn {
-  /* padding: 0 2.2rem; */
-  background-color: #535878; 
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+.botao-categoria img{
+  max-width: 2rem;
+  max-height: 2rem;
+  place-self: center;
+}
+.botao-categoria{
+  /* text-transform: uppercase; */
+  background: #06142E; 
+  border: none;
+  font-size:1.1rem;
+  font-weight: 700;
+  color:white;
+  padding: 1rem 2rem 1rem 1rem;
+  display: flex; 
+  gap: 1rem; 
   border-radius: 20px;
-  place-content: center ;
+  align-items: center;
+  width: 10.5rem;
+  height: 4.2rem;
+  text-align: start;
+  transform: .2s;
 }
 
-.btn img{
-  width: 3rem;
+.botao-categoria:focus{
+  background: rgba(1, 50, 114, 0.9);
+  
+}
+.botaoConteiner a{
+  text-decoration: none;
 }

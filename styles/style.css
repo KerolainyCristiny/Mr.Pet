@@ -1,7 +1,30 @@
 @import "./menu.css";
 @import "./slide.css";
 @import "./botoesCategoria.css";
-@import "./pet.css";
+@import "./tituloContainer.css";
 @import "./produtos.css";
 @import "./footer.css";
 
+@import "./bootstrap.css";
+
+/* Tela CARRINHO */
+@import "./carrinho.css";
+
+/* TEla PERFIL */
+@import "./dadosUsuario.css";
+@import "./favoritos.css";
+
+/* Breadcrumb + setaVoltar */
+@import "./breadcrumb_setaVoltar.css";
+
+/* Tela pedido */
+@import "./pedidos.css";
+
+/*Tela de ConfirmaçãoCompra  */
+@import "./confirmarCompra.css";
+
+@import "./confirmarFrete.css";
+@import "./marcas.css";
+
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Lato:wght@700&display=swap');

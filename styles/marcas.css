@@ -1,0 +1,36 @@
+.marcas{ 
+  margin: 3rem auto 3rem;
+  place-self: center;
+  place-items: center;
+  max-width: 1000px;
+  display: grid;
+
+
+}
+
+.marcas .gridMarcas{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  
+}
+
+.marcas .gridMarcas .item{
+  /* tamanho da caixa */
+  font-family: "Inter";
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: -3rem;
+}
+.marcas .gridMarcas .imgProduto{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-bottom: 40rem;
+}
+.marcas .gridMarcas .imgItem{
+  place-self: center;
+  width: 60%;
+}
+.marcas .gridMarcas .descricao h6{
+  font-weight: 700;
+  
+}

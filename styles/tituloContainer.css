@@ -1,0 +1,68 @@
+
+.tituloContainer{
+  font-family: "Inter";
+  overflow-x: hidden;
+  max-width: 1000px;
+  display: grid;
+  /* place-items: center; */
+  margin: 1rem auto 1rem;
+}
+
+.tituloContainer .titulo{
+  color: black;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-top: 1rem;
+  
+}
+.tituloContainer .titulo h1{
+  /* margin: 4rem 0 0 0; */
+  justify-self: start;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.tituloContainer .titulo h2{
+  justify-self: start;
+  margin: 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.tituloContainer .titulo2 h2{
+  justify-self: start;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.tituloContainer .titulo h4{
+  justify-self: start;
+  margin: 0 ;
+  grid-area: 2;
+  align-self: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.tituloContainer .titulo img{
+  width: 3rem;
+  justify-self: center;
+  grid-row: 2;
+}
+
+.tituloContainer .btnAnimais{
+  display: flex;
+  gap: 1.5rem;
+  text-transform: uppercase;
+  margin: 2rem 0 ;
+}
+
+.tituloContainer .btnAnimais a{
+  background-color: #E9C2C5;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #06142E;
+  padding: 1rem 3.2rem;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+}

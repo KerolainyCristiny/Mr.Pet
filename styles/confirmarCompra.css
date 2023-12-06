@@ -1,0 +1,243 @@
+.btn-confirma {
+  background: #06142e;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 20px;
+  align-items: center;
+  width: 14rem;
+  height: 4rem;
+  text-align: start;
+  transform: 0.2s;
+  flex-wrap: wrap;
+}
+.btn-confirma:focus {
+  background: rgba(1, 50, 114, 0.9);
+}
+
+.imagem {
+  width: 2rem;
+}
+.local {
+  width: 1.4rem;
+}
+
+.tab-pane {
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+#blocoConfirmeDados {
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  place-self: start;
+}
+
+.preenchimentoDados {
+  background: #f5d7db;
+  /* background: #ffffff; */
+  border-radius: 0 20px 20px 0;
+  display: grid;
+  place-items: center;
+}
+.preenchimentoDados h2 {
+  font-family: "inter";
+  font-weight: 700;
+  display: grid;
+  place-self: start;
+  margin: 1rem 1.5rem;
+  font-size: 1.7rem;
+}
+
+.preenchimentoDados .input {
+  background: white;
+  font-family: "inter";
+  font-size: 0.9rem;
+  width: 26rem;
+  height: 2.4rem;
+  margin: 0.4rem 0;
+  border-radius: 15px;
+  border: 1.5px #fff solid;
+  color: rgb(48, 47, 47);
+  font-weight: 400;
+  padding: 0.5rem;
+}
+
+.preenchimentoDados .gridSenha {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+}
+.preenchimentoDados .gridSenha .senha {
+  background: white;
+  font-family: "inter";
+  font-size: 0.9rem;
+  margin: 0.4rem 0 0 1.5rem;
+  border-radius: 15px;
+  border: 1.5px #fff solid;
+  color: rgb(48, 47, 47);
+  font-weight: 400;
+  padding: 0.5rem;
+}
+#regraSenha {
+  line-height: 0.1;
+  /* padding: 1rem 1rem; */
+  font-weight: 700;
+  font-size: 0.7rem;
+  margin: 1rem 0;
+}
+
+#alterarEmail {
+  display: grid;
+  font-size: 1rem;
+  color: #f4705b;
+  padding: 1rem;
+  place-self: start;
+  margin: 0 1rem;
+  font-weight: 700;
+}
+
+#fraseFinal {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+#fraseFinal a {
+  color: #f4705b;
+}
+
+#botaoCriarConta {
+  font-size: 2rem;
+  background: #f4705b;
+  border-radius: 15px;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 2rem;
+  place-self: end;
+}
+
+.resumo-pedido .total {
+  border-radius: 0 0 20px 20px;
+}
+.resumo-pedido .total h5 {
+  font-size: 0.8rem;
+  display: grid;
+  grid-column: span 2;
+  place-items: end;
+  line-height: 0.2;
+}
+.resumo-pedido .textTotal {
+  font-weight: 900;
+}
+.resumo-pedido .total .valorTotal {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.gridSenha #endereco .flex {
+  display: grid;
+  grid-template-columns: 7% 93%;
+  gap: 0.5rem;
+}
+
+.gridSenha #endereco h3 {
+  font-size: 1rem;
+}
+.gridSenha #endereco #last {
+  margin: 0 0 2rem 0;
+}
+#container-botao {
+  gap: 1rem;
+  display: flex;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  grid-column: span 2;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  place-self: end;
+  margin: 1rem 0;
+}
+#botaoCancelar {
+  background: #06142e;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+#botaoProximo {
+  background: #f4705b;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+.grid-pag{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 20px;
+
+  background: white;
+  padding: 1rem ;
+  margin: .5rem 1rem;
+  justify-self: start;
+}
+.cart{
+  gap: 15rem  ;
+}
+.bol{
+  gap: 12rem;
+}
+.pixgrid{
+  gap: 10rem;
+  margin-bottom: 5rem;
+}
+.grid-pag .cartao{
+  width: 3rem;
+}
+.grid-pag .boleto{
+  width: 4rem;
+}
+.grid-pag .pix{
+  width: 4.5rem;
+}
+.preenchimentoDados #confirmeDados {
+  display: grid;
+  place-self: start;
+  padding: 2rem;
+}
+.preenchimentoDados #confirmeDados h2{
+  margin:0
+}
+.botoesFinalizarCompra{
+  display: flex;
+  gap: 2rem;
+  place-self: end;
+  padding: 5rem 0 ;
+}
+.botoesFinalizarCompra button{
+ padding: 1rem 2rem;
+ border: none;
+ border-radius: 20px;
+ color: white;
+ font-weight: 700;
+}
+#btn-1{
+  background: #06142e;
+}
+#btn-2{
+  background: #f4705b;
+}
+
+#btn-2 a {
+  background: none;
+  text-decoration: none;
+}

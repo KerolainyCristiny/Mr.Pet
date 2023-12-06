@@ -1,0 +1,89 @@
+#pills-tab {
+  display: grid;
+  width: 1000px;
+  margin: 1rem auto 0;
+}
+#blocoConfirmeFrete {
+  background: #f5d7db;
+  padding: 1rem;
+  border-radius: 0 20px 20px 0;
+}
+#confirmeDados{
+  font-weight: 700;
+}
+#conjunto-nome {
+  margin: 2rem 0 0;
+  display: grid;
+  font-size: 1rem;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+  font-family: "inter";
+  
+}
+#conjunto-nome h6 {
+  font-size: 0.8rem;
+  place-items: center;
+  font-weight: 700;
+}
+
+.preenchimentoDados2 {
+  margin: 2rem 0 0;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+  font-family: "inter";
+  background: rgba(255, 255, 255, 0.671);
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+.preenchimentoDados2 p {
+  color: rgb(0, 0, 0);
+  font-family: "inter";
+  font-size: 16px;
+}
+.preenchimentoDados2 input {
+  display: grid;
+  width: 1rem;
+  place-self: start;
+  margin-top: 0.3rem;
+
+}
+
+#escolhaFrete1 {
+  color: rgb(0, 0, 0);
+  font-family: "inter";
+  font-size: 16px;
+}
+
+#escolhaFrete2 {
+  color: rgb(0, 0, 0);
+  font-family: "inter";
+  font-size: 16px;
+}
+
+#escolhaFrete3 {
+  color: rgb(0, 0, 0);
+  font-family: "inter";
+  font-size: 16px;
+}
+
+#valorFrete {
+  color: rgb(0, 0, 0);
+  font-family: "inter";
+  font-size: 16px;
+}
+
+#container-botaoFrete{
+  display: grid;
+}
+#container-botaoFrete button {
+  
+  font-size: 2rem;
+  background: #f4705b;
+  border-radius: 15px;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 2rem;
+  place-self: end;
+
+}

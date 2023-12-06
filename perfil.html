@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./img/logoPurple.svg">
+
+    <title>PERFIL DO USUÁRIO</title>
+</head>
+
+<body>
+    <!-- MENU HEADER -->
+    <div class="header">
+        <div class="conteudo">
+            <a href="./index.html"><img class="logoHome" src="img/logo.svg" alt=""></a>
+            <div class="barraPesquisa">
+                <a href="./index.html"><img src="./img/iconePesquisa.svg" alt=""></a>
+                <input type="text" name="barra-pesquisa">
+            </div>
+
+            <div class="gridMenu">
+                <a href="/carrinho.html"><img class="iconeCarrinho" src="./img/iconeCarrinho.svg" alt=""></a>
+                <a href="./perfil.html"><img class="iconePerfil" src="./img/IconePerfil.svg" alt=""></a>
+
+
+                <!-- MENU LATERAL ESQUERDA <- -->
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="iconeMenu" src="./img/menuHamburger.svg" alt=""></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel"><a href="./perfil.html"><img src="./img/perfilBlack.svg"></a></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="offcanvas-body">
+                            <div class="menuLateral">
+                                <a href="./perfil.html">
+                                <img class="fav" src="./img/BotãoFavoritar.svg" alt="">
+                                <h3 id="offcanvasRightLabel">Favorites</h5></a>
+                            </div>
+                            <div class="menuLateral">
+                                <a href="./pedidos.html"><img class="visto" src="./img/vistoRecente.svg" alt="">
+                                    <h3 id="offcanvasRightLabel">Requests</h5></a>
+                            </div><div class="menuLateral">
+                                <a href="./carrinho.html"><img class="car" src="./img/carrinho.svg" alt="">
+                                <h3 id="offcanvasRightLabel">Cart</h5></a>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+            </div><!--gridMenu-->
+        </div><!--conteudo-->
+    </div><!-- header -->
+
+
+    <div class="st-voltar">
+        <a class="st" href="./index.html">
+            <img class="setaVoltar" src="./img/setaVoltar.svg" alt="Voltar">
+        </a>
+        <span></span>
+    </div>
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+        <a href="./index.html">Home</a>
+        <img src="./img/setaBreadcrumb.svg" alt="">
+        <a href="./produtos.html">Perfil</a>
+    </div><!-- breadcrumb -->
+
+
+    <!-- DADOS DO USUÁRIO -->
+    <div class="dadosUsuario">
+        <div class="titulo">
+            <h1> <b>Perfil</b> </h1>
+        </div>
+
+        <div class="dados">
+            <img src="./img/jimin.jpg" alt="">
+            <div class="texto">
+                <h2> Fulana de Tal</h2>
+                <h3>Mãe do Claúdio</h3>
+                <h4> Telefone: (XX)XXXXX-XXXX </h4>
+                <h4> Email: fulanadetal@gmail.com</h4>
+                <button> <b> Alterar Dados </b></button>
+            </div>
+
+        </div>
+
+    </div>
+    <!--FAVORITOS-->
+
+    <div class="favoritos"><!--limite de posicionamento geral-->
+        <div class="text">
+            <div class="text1">
+                <h3><b>Favoritos</b></h3>
+                <span></span>
+            </div>
+
+            <div class="text2">
+                <h3><b>Vistos Recentemente</b></h3>
+            </div>
+        </div>
+        <div class="produto">
+            <div class="gridProdutos"><!--divisão do grid-->
+
+                <div class="item"><!--config do produto-->
+                    <div class="imgProduto">
+                        <img class="imgItem" src="./img/racao.jpg" alt="">
+                        <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                    </div>
+                    <span class="spanProduto"></span>
+                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                        <h3>Nome Produto</h3>
+
+                        <div class="valores"><!--posicionamento dos valores-->
+                            <h4 class="valorOriginal"><s>R$ 99.99</s></h4>
+                            <h1>R$ 79.90</h1>
+                            <h4>ou 4x de R$19.99</h4>
+                        </div><!--valores-->
+                        <a href="/">Comprar</a>
+                    </div>
+                </div><!--item1-->
+
+                <div class="item"><!--config do produto-->
+                    <div class="imgProduto">
+                        <img class="imgItem" src="./img/racao.jpg" alt="">
+                        <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                    </div>
+                    <span class="spanProduto"></span>
+                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                        <h3>Nome Produto</h3>
+                        <div class="valores"><!--posicionamento dos valores-->
+                            <h4><s>R$ 99.99</s></h4>
+                            <h1>R$ 79.90</h1>
+                            <h4>ou 4x de R$19.99</h4>
+                        </div><!--valores-->
+                        <a href="/">Comprar</a>
+                    </div>
+                </div><!--item2-->
+
+                <div class="item"><!--config do produto-->
+                    <div class="imgProduto">
+                        <img class="imgItem" src="./img/racao.jpg" alt="">
+                        <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                    </div>
+                    <span class="spanProduto"></span>
+                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                        <h3>Nome Produto</h3>
+                        <div class="valores"><!--posicionamento dos valores-->
+                            <h4><s>R$ 99.99</s></h4>
+                            <h1>R$ 79.90</h1>
+                            <h4>ou 4x de R$19.99</h4>
+                        </div><!--valores-->
+                        <a href="/">Comprar</a>
+                    </div>
+                </div><!--item3-->
+
+                <div class="item "><!--config do produto-->
+                    <div class="imgProduto">
+                        <img class="imgItem" src="./img/racao.jpg" alt="">
+                        <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                    </div>
+                    <span class="spanProduto"></span>
+                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                        <h3>Nome Produto</h3>
+                        <div class="valores"><!--posicionamento dos valores-->
+                            <h4><s>R$ 99.99</s></h4>
+                            <h1>R$ 79.90</h1>
+                            <h4>ou 4x de R$19.99</h4>
+                        </div><!--valores-->
+                        <a href="/">Comprar</a>
+                    </div>
+                </div><!--item4-->
+
+                <div class="item"><!--config do produto-->
+                    <div class="imgProduto">
+                        <img class="imgItem" src="./img/racao.jpg" alt="">
+                        <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                    </div>
+                    <span class="spanProduto"></span>
+                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                        <h3>Nome Produto</h3>
+                        <div class="valores"><!--posicionamento dos valores-->
+                            <h4><s>R$ 99.99</s></h4>
+                            <h1>R$ 79.90</h1>
+                            <h4>ou 4x de R$19.99</h4>
+                        </div><!--valores-->
+                        <a href="/">Comprar</a>
+                    </div>
+                </div><!--item5-->
+
+                <div class="item"><!--config do produto-->
+                    <div class="imgProduto">
+                        <img class="imgItem" src="./img/racao.jpg" alt="">
+                        <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                    </div>
+                    <span class="spanProduto"></span>
+                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                        <h3>Nome Produto</h3>
+                        <div class="valores"><!--posicionamento dos valores-->
+                            <h4><s>R$ 99.99</s></h4>
+                            <h1>R$ 79.90</h1>
+                            <h4>ou 4x de R$19.99</h4>
+                        </div><!--valores-->
+                        <a href="/">Comprar</a>
+                    </div>
+                </div><!--item6-->
+
+            </div><!--Grid-->
+        </div>
+    </div><!--favoritos-->
+    </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="rodape">
+        <div class="footerDescricoes">
+            <div class="logo"><!--grid 1-->
+                <img src="./img/logoFooter.svg" alt="">
+                <!-- <span></span> -->
+                <!-- boneco de arrasta pra cima -->
+            </div>
+            <div class="sitemap">
+
+                <a href="./perfil.html">Perfil</a>
+                <a href="./produtos.html">Produtos</a>
+                <a href="/">Promoções</a>
+                <a href="./carrinho.html">Meu Carrinho</a>
+                <a href="/">Pedidos </a>
+
+            </div>
+            <div class="contato">
+                <h1>Contatos</h1>
+                <img src="./img/iconeCarrinho.svg" alt="">
+                <img src="./img/iconeCarrinho.svg" alt="">
+                <img src="./img/iconeCarrinho.svg" alt="">
+                <span></span>
+                <h3>.Cadastre-se para receber atualizações e promoções</h3>
+                <input type="email" placeholder="E-mail">
+                <button>Enviar</button>
+            </div>
+        </div>
+        <h3 class="direitosReservados">Todos os direitos reservados ao Mr.Pet</h3>
+    </div>
+
+
+
+
+    <script src="./jquery-3.3.1.slim.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./bootstrap.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

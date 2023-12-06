@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="icon" href="./img/logoPurpleico.ico">
+
+  <title>Confirmar Compra</title>
+</head>
+
+<body>
+
+  <!-- MENU HEADER -->
+  <div class="header">
+    <div class="conteudo">
+      <a href="./index.html"><img class="logoHome" src="img/logo.svg" alt=""></a>
+      <div class="barraPesquisa">
+        <img src="./img/iconePesquisa.svg" alt="">
+        <input type="text" name="barra-pesquisa">
+      </div>
+
+      <div class="gridMenu">
+        <a href="/carrinho.html"><img class="iconeCarrinho" src="./img/iconeCarrinho.svg" alt=""></a>
+        <a href="./perfil.html"><img class="iconePerfil" src="./img/IconePerfil.svg" alt=""></a>
+
+
+        <!-- MENU LATERAL ESQUERDA <- -->
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="iconeMenu" src="./img/menuHamburger.svg" alt=""></button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"><a href="./perfil.html"><img src="./img/perfilBlack.svg"></a></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="offcanvas-body">
+              <div class="menuLateral">
+                <a href="./perfil.html">
+                  <img class="fav" src="./img/BotãoFavoritar.svg" alt="">
+                  <h3 id="offcanvasRightLabel">Favorites</h5>
+                </a>
+              </div>
+              <div class="menuLateral">
+                <a href="./pedidos.html"><img class="visto" src="./img/vistoRecente.svg" alt="">
+                  <h3 id="offcanvasRightLabel">Requests</h5>
+                </a>
+              </div>
+              <div class="menuLateral">
+                <a href="./carrinho.html"><img class="car" src="./img/carrinho.svg" alt="">
+                  <h3 id="offcanvasRightLabel">Cart</h5>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div><!--gridMenu-->
+    </div><!--conteudo-->
+  </div><!-- header -->
+
+
+  <div class="st-voltar">
+    <a class="st" href="./index.html">
+      <img class="setaVoltar" src="./img/setaVoltar.svg" alt="Voltar">
+    </a>
+    <span></span>
+  </div>
+  <!-- breadcrumb -->
+  <div class="breadcrumb">
+    <a href="./index.html">Home</a>
+    <img src="./img/setaBreadcrumb.svg" alt="">
+    <a href="./produtos.html">Product</a>
+    <img src="./img/setaBreadcrumb.svg" alt="">
+    <a href="">Sache</a>
+    <img src="./img/setaBreadcrumb.svg" alt="">
+    <a href="">Confirm</a>
+    <img src="./img/setaBreadcrumb.svg" alt="">
+    <a href="./carrinho.html">Cart</a>
+    <img src="./img/setaBreadcrumb.svg" alt="">
+    <a href="./">Confirm your details</a>
+
+  </div><!-- breadcrumb -->
+
+
+  <div class="tituloContainer">
+    <div class="titulo2">
+      <h2>Confirm your details</h2>
+    </div>
+  </div>
+  <!--conjunto de botões-->
+
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="btn-confirma active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img class="imagem" src="/img/Conta.svg" alt="icone conta">Confirm your Details</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="btn-confirma" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><img class="local" src="/img/localização.svg" alt="icone localização">Address</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="btn-confirma" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><img class="imagem" src="/img/caminhao.svg" alt="icone caminhão">Freight</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="btn-confirma" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img class="imagem" src="/img/dinheiro.svg" alt="icone dinheiro">Payment</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <!-- Dados -->
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+      <div class="gridCentralCarrinho">
+        <div class="preenchimentoDados">
+          <h2>Confirm your Details</h2>
+
+          <input type="text" placeholder="Name*" class="input">
+          <input type="text" placeholder="Last Name*" class="input">
+          <input type="text" placeholder="CPF*" class="input">
+          <input type="number" placeholder="Phone*" class="input">
+          <input type="email" placeholder="E-mail*" class="input">
+          <div class="gridSenha">
+            <div>
+              <input type="password" placeholder="Password*" class="senha">
+              <input type="password" placeholder="Password Confirmation*" class="senha">
+            </div>
+            <div id="regraSenha">
+              <p class="estiloSenha">Mínimo de 8 dígitos</p>
+              <p class="estiloSenha">1 letra Maiúscula</p>
+              <p class="estiloSenha">1 número</p>
+              <p class="estiloSenha">1 caractere especial</p>
+            </div>
+          </div>
+
+          <a id="alterarEmail" href="#">Alterar email</a>
+          <p id="fraseFinal">Ao criar sua conta você concorda com os <a id="alterarEmail1" href="#">Termos de Uso</a> do Doge...</p>
+
+          <button id="botaoCriarConta">Criar Conta</button>
+        </div>
+
+        <div class="grid-valoresCompra">
+
+          <div class="resumo-pedido">
+            <div class="titulo">
+              <h4>Resumo do Pedido</h4>
+            </div>
+            <div class="descricao" id="first">
+              <h4>Produtos(x itens)</h4>
+              <h4 id="valor-destaque">R$ xx,xx</h4>
+              <h4 id="cores">Descontos</h4>
+              <h4 id="valores" id="cores">-R$ xx,xx</h4>
+            </div>
+
+            <div class="descricao">
+              <h4 class="destaque">Subtotal</h4>
+              <h4 class="destaque" id="valores">R$ xx,xx</h4>
+              <h4 id="cores">Frete</h4>
+              <h4 id="valores" id="cores">à calcular</h4>
+            </div>
+
+            <div class="descricao total">
+              <h2 class="textTotal">Total</h2>
+
+              <h2 class="valorTotal">R$ XX.XX</h2>
+              <h5>até 4x de R$ XX.XX s/juros</h5>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- endereço -->
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+      <div class="gridCentralCarrinho">
+        <div class="preenchimentoDados">
+          <h2>Address</h2>
+
+          <input type="text" placeholder="Name*" class="input">
+          <input type="number" placeholder="CEP*" class="input">
+          <input type="text" placeholder="State - City*" class="input">
+          <input type="text" placeholder="Neighborhood*" class="input">
+          <input type="text" placeholder="Street/Avenue*" class="input">
+          <div class="gridSenha">
+            <div>
+              <input type="number" placeholder="Number*" class="senha">
+              <input type="text" placeholder="Complement" class="senha">
+            </div>
+            <div id="endereco">
+              <h3>Salvar como:</h3>
+              <div class="flex">
+                <input type="radio" class="flex">
+                <h3>Home</h3>
+              </div>
+              <div class="flex" id="last">
+                <input type="radio" class="flex">
+                <h3>Work</h3>
+              </div>
+            </div>
+            <div id="container-botao">
+              <button id="botaoCancelar">Cancelar</button>
+              <button id="botaoProximo">Próximo</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="grid-valoresCompra">
+          <div class="resumo-pedido">
+            <div class="titulo">
+              <h4>Resumo do Pedido</h4>
+            </div>
+            <div class="descricao" id="first">
+              <h4>Produtos(x itens)</h4>
+              <h4 id="valor-destaque">R$ xx,xx</h4>
+              <h4 id="cores">Descontos</h4>
+              <h4 id="valores" id="cores">-R$ xx,xx</h4>
+            </div>
+
+            <div class="descricao">
+              <h4 class="destaque">Subtotal</h4>
+              <h4 class="destaque" id="valores">R$ xx,xx</h4>
+              <h4 id="cores">Frete</h4>
+              <h4 id="valores" id="cores">à calcular</h4>
+            </div>
+
+            <div class="descricao total">
+              <h2 class="textTotal">Total</h2>
+
+              <h2 class="valorTotal">R$ XX.XX</h2>
+              <h5>até 4x de R$ XX.XX s/juros</h5>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- frete -->
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+      <!--bloco frete-->
+      <div class="gridCentralCarrinho">
+        <div id="blocoConfirmeFrete">
+
+          <div id="confirmeDados">
+            <h2>Freight</h2>
+            <p id="fraseEndereco">Para realizar o pedido adicione uma opção de entrega</p>
+          </div>
+
+          <div id="conjunto-nome">
+            <h6 id="transportadora">Transportadora</h6>
+            <h6 id="estimativa">Estimativa</h6>
+            <h6 id="valor67">Valor</h6>
+            <span></span>
+          </div>
+
+          <div class="preenchimentoDados2">
+            <p>PAC</p>
+            <p id="escolhaFrete1">
+              X-X dias
+            </p>
+            <p id="valorFrete">
+              R$XX,XX
+            </p>
+            <input type="radio">
+          </div>
+          <div class="preenchimentoDados2">
+            <p>SEDEX</p>
+            <p id="escolhaFrete2">
+              X-X dias
+            </p>
+            <p id="valorFrete">
+              R$XX,XX
+            </p>
+            <input type="radio">
+
+          </div>
+          <div class="preenchimentoDados2">
+            <p>Mini Envios</p>
+            <p id="escolhaFrete3">
+              X-X dias
+            </p>
+            <p id="valorFrete">
+              R$XX,XX
+            </p>
+            <input type="radio">
+
+          </div>
+
+          <div id="container-botaoFrete">
+            <button id="botaoSalvar">Salvar</button>
+
+          </div>
+        </div>
+
+
+        <!--Resumo do pedido-->
+        <div class="grid-valoresCompra">
+          <div class="resumo-pedido">
+            <div class="titulo">
+              <h4>Resumo do Pedido</h4>
+            </div>
+            <div class="descricao" id="first">
+              <h4>Produtos(x itens)</h4>
+              <h4 id="valor-destaque">R$ xx,xx</h4>
+              <h4 id="cores">Descontos</h4>
+              <h4 id="valores" id="cores">-R$ xx,xx</h4>
+            </div>
+
+            <div class="descricao">
+              <h4 class="destaque">Subtotal</h4>
+              <h4 class="destaque" id="valores">R$ xx,xx</h4>
+              <h4 id="cores">Frete</h4>
+              <h4 id="valores" id="cores">à calcular</h4>
+            </div>
+
+            <div class="descricao total">
+              <h2 class="textTotal">Total</h2>
+
+              <h2 class="valorTotal">R$ XX.XX</h2>
+              <h5>até 4x de R$ XX.XX s/juros</h5>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--frete-->
+    <!-- pagamento -->
+    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+
+      <div class="gridCentralCarrinho">
+        <div class="preenchimentoDados">
+          <div id="confirmeDados">
+            <h2>Payment</h2>
+            <p>Escolha um método de pagamento</p>
+          </div>
+
+          <div class="grid-pag cart">
+            <h3>Crédito</h3>
+            <img class="cartao" src="./img/cartao.svg" alt="">
+          </div>
+          <div class="grid-pag cart">
+            <h3>Débito</h3>
+            <img class="cartao" src="./img/cartao.svg" alt="">
+          </div>
+          <div class="grid-pag bol">
+            <h3>Boleto</h3>
+            <img class="boleto" src="./img/boleto.svg" alt="">
+          </div>
+          <div class="grid-pag pixgrid">
+            <h3>PIX</h3>
+            <img class="pix" src="./img/pix.png" alt="">
+          </div>
+          
+
+        </div>
+
+
+
+        <div class="grid-valoresCompra">
+          <div class="resumo-pedido">
+            <div class="titulo">
+              <h4>Resumo do Pedido</h4>
+            </div>
+            <div class="descricao" id="first">
+              <h4>Produtos(x itens)</h4>
+              <h4 id="valor-destaque">R$ xx,xx</h4>
+              <h4 id="cores">Descontos</h4>
+              <h4 id="valores" id="cores">-R$ xx,xx</h4>
+            </div>
+
+            <div class="descricao">
+              <h4 class="destaque">Subtotal</h4>
+              <h4 class="destaque" id="valores">R$ xx,xx</h4>
+              <h4 id="cores">Frete</h4>
+              <h4 id="valores" id="cores">à calcular</h4>
+            </div>
+
+            <div class="descricao total">
+              <h2 class="textTotal">Total</h2>
+
+              <h2 class="valorTotal">R$ XX.XX</h2>
+              <h5>até 4x de R$ XX.XX s/juros</h5>
+
+            </div>
+          </div>
+        </div>
+        <span></span>
+        <div class="botoesFinalizarCompra">
+          <button id="btn-1">Cancelar</button>
+          <a href="./pedidos.html"><button id="btn-2">Confirmar compra</button></a>
+        </div>
+      </div>
+
+
+    </div><!-- pagamento -->
+    <!--Confirme seus dados-->
+
+ <!-- FOOTER -->
+ <div class="rodape">
+  <div class="footerDescricoes">
+    <div class="logo"><!--grid 1-->
+      <img src="./img/logoFooter.svg" alt="">
+      <!-- <span></span> -->
+      <!-- boneco de arrasta pra cima -->
+    </div>
+    <div class="sitemap">
+
+      <a href="/">Perfil</a>
+      <a href="/">Produtos</a>
+      <a href="/">Promoções</a>
+      <a href="/">Meu Carrinho</a>
+      <a href="/">Pedidos </a>
+
+    </div>
+    <div class="contato">
+      <h1>Contatos</h1>
+      <img src="./img/whatsapp.png" alt="Whatsapp">
+      <img src="./img/instagram.png" alt="Instagram">
+      <span></span>
+      <h3>.Cadastre-se para receber atualizações e promoções</h3>
+      <input type="email" placeholder="E-mail">
+      <button>Enviar</button>
+    </div>
+  </div>
+  <h3 class="direitosReservados">Todos os direitos reservados ao Mr.Pet</h3>
+</div>
+
+<script src="./jquery-3.3.1.slim.min.js"></script>
+<script src="./popper.min.js"></script>
+<script src="./bootstrap.min.js"></script>
+<script src="./bootstrap.js"></script>
+<script src="./script.js"></script>
+</body>
+
+</html>

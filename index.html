@@ -1,245 +1,488 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="./img/logoPurpleico.ico">
-    
     <title>HOME</title>
 </head>
+
 <body>
 
-<!-- MENU HEADER -->
+    <!-- MENU HEADER -->
     <div class="header">
-        <!-- Lupa de busca - botão que se o usuario clicar com javaScript a logo tem que sumir e a barra de pesquisa aparecer -->
-        <button class="botaoPesquisa"><img class="iconePesquisa" src="img/iconePesquisa.svg" alt=""></button>
-        <img class="logoHome" src="img/logoPurple.svg" alt="">
-          
-        <div class="carPerfil">
-            <a href="./carrinho.html" class="botaoCarrinho"><img class="iconeCarrinho" src="img/iconeCarrinho.svg" alt=""></a>
-            <a href="./perfil.html" class="botaoPerfil"><img class="iconePerfil" src="img/IconePerfil.svg" alt=""></a>
-            <!-- botao perfil vai ser um a para a pagina de perfil -->
-        </div>
+        <div class="conteudo">
+            <img class="logoHome" src="img/logo.svg" alt="">
+            <div class="barraPesquisa">
+                <img src="./img/iconePesquisa.svg" alt="">
+                <input type="text" name="barra-pesquisa">
+            </div>
+
+            <div class="gridMenu">
+                <a href="/carrinho.html"><img class="iconeCarrinho" src="./img/iconeCarrinho.svg" alt=""></a>
+                <a href="./perfil.html"><img class="iconePerfil" src="./img/IconePerfil.svg" alt=""></a>
+
+
+                <!-- MENU LATERAL ESQUERDA <- -->
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="iconeMenu" src="./img/menuHamburger.svg" alt=""></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel"><a href="./perfil.html"><img src="./img/perfilBlack.svg"></a></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="menuLateral">
+                            <a href="./perfil.html">
+                            <img class="fav" src="./img/BotãoFavoritar.svg" alt="">
+                            <h3 id="offcanvasRightLabel">Favorites</h5></a>
+                        </div>
+                        <div class="menuLateral">
+                            <a href="./pedidos.html"><img class="visto" src="./img/vistoRecente.svg" alt="">
+                            <h3 id="offcanvasRightLabel">Requests</h5></a>
+                        </div><div class="menuLateral">
+                            <a href="./carrinho.html"><img class="car" src="./img/carrinho.svg" alt="">
+                            <h3 id="offcanvasRightLabel">Cart</h5></a>
+                        </div>
+                    </div>
+                    
+                    
+                        
+                    </div>
+                </div>
+
+            </div><!--gridMenu-->
+        </div><!--conteudo-->
     </div><!-- header -->
 
-<!-- MENU HAMBURGUER -->
-    <div>
-        <img class="menu" src="./img/Vector.svg"></img>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/slideA.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/slideB.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/slideC.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/slideD.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
-<!-- CONTAINER DO SLIDE / não responsivo -->
-    <div class="slider"><!-- slider  -->
-        <div class="slides"><!-- slides  -->
-            <!-- botoes -->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-
-            <!-- img slides -->
-            <div class="slide first"><img class="slide0" src="./img/slide1.jpg" alt=""></div>
-            <div class="slide"><img class="slide1" src="./img/slide2.jpg" alt=""></div>
-            <div class="slide"><img class="slide2" src="./img/slide3.jpg" alt=""></div>
-            <div class="slide"><img class="slide3" src="./img/slide4.jpg" alt=""></div>
-            <!-- img slide -->
-
-            <!-- navegacao auto -->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
-        </div><!-- slides  -->
-
-        <!-- label's são forma de entrada -->
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-        </div>
-    </div><!-- slider  -->
 
 
-<!-- Botões PRODUTO / MARCAS/ MAIS VENDIDOS / PROMOÇÕES  -->
-    <div class="btnCategoria">
-        <div class="btn">
-            <img src="./img/iconPromocao.svg" alt="">
-            <h2>Produtos</h2>
-        </div>
-        <div class="btn">
-            <img src="./img/iconPromocao.svg" alt="">
-            <h2>Marcas</h2>
-        </div>
-        <div class="btn" id="btn">
-            <img src="./img/iconPromocao.svg" alt="">
-            <h2>Mais Vendidos</h2>
-        </div>
-        <div class="btn">
-            <img src="./img/iconPromocao.svg" alt="">
-            <h2>Promoções</h2>
-        </div>
-    </div><!--Fim botoes categoria-->
+
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="botao-categoria active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img src="./img/icone3.svg" alt="">Promoções</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="botao-categoria" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="./img/icone1.svg" alt="">Mais Vendidos</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="botao-categoria" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><img src="./img/icone4.svg" alt="">Marcas</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a href="./produtos.html">
+                <button class="botao-categoria" id="pills-disable-tab" data-bs-toggle="pill" data-bs-target="#pills-disable" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img src="./img/icone2.svg" alt="">Produtos</button></a>
+        </li>
+    </ul>
 
 
-<!--TITULO E BOTOWS DE ANIMAIS  -->
-    <div class="petContainer">
-        <div class="titulo">
-            <h1>Pets</h1>
-            <h4>Ver mais</h4>
-            <img src="./img/setaBranca.png" alt="">
-            <!-- <img src="./img/setaFina.png" alt=""> -->
-        </div>
-        <div class="btnAnimais">
-            <a href="/">Gatos</a>
-            <a href="/">Cachorros</a>
-            <a href="/">Passáros</a>
-            <a href="/">Peixes</a>
-            <a href="/">Coelhos</a>
-            <a href="/">Hamister</a>
-            <a href="/">Tartarugas</a>
-        </div>
+    <div class="tab-content" id="pills-tabContent">
 
-<!--PRODUTOS-->
-        <div class="produtos"><!--limite de posicionamento geral-->
-            <div class="grid"><!--divisão do grid-->
-               
-                <div class="item 1"><!--config do produto-->
-                    <div class="imgProduto">
-                        <img src="./img/slide1.jpg" alt="">
-                    </div>
-                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
-                        <h3>Nome Produto</h3>
-                        <div class="valores"><!--posicionamento dos valores-->
-                            <h4><s>R$ 99.99</s></h4>
-                            <h1>R$ 79.90</h1>
-                            <h4>ou 4x de R$19.99</h4>
-                        </div><!--valores-->
-                        <img src="./img/Group.png" alt="Favoritar">
-                    </div>
-                </div><!--item1-->
+        <!-- Promoções - Pets -->
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <div class="tituloContainer">
+                <div class="titulo">
+                    <h1>Pets</h1>
+                    <h4>View more</h4>
+                    <img src="./img/setaReta.png" alt="">
+                </div>
+                <div class="btnAnimais">
+                    <a href="./pedidos.html">Cat</a>
+                    <a href="./confirmarCompra.html">Dog</a>
+                    <a href="/">Birds</a>
+                    <a href="/">Fish</a>
+                    <a href="/">Rabbits</a>
+                    <a href="/">Hamster</a>
+                </div>
+            </div> <!--tituloContainer -->
+            <!--PRODUTOS-->
+            <div class="produto"><!--limite de posicionamento geral-->
+                <div class="gridProdutos"><!--divisão do grid-->
 
-                <div class="item 2"><!--config do produto-->
-                    <div class="imgProduto">
-                        <img src="./img/slide4.jpg" alt="">
-                    </div>
-                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
-                        <h3>Nome Produto</h3>
-                        <div class="valores"><!--posicionamento dos valores-->
-                            <h4><s>R$ 99.99</s></h4>
-                            <h1>R$ 79.90</h1>
-                            <h4>ou 4x de R$19.99</h4>
-                        </div><!--valores-->
-                        <img src="./img/Group.png" alt="Favoritar">
-                    </div>
-                </div><!--item2-->
-                
-                <div class="item 3"><!--config do produto-->
-                    <div class="imgProduto">
-                        <img src="./img/slide2.jpg" alt="">
-                    </div>                    
-                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
-                        <h3>Nome Produto</h3>
-                        <div class="valores"><!--posicionamento dos valores-->
-                            <h4><s>R$ 99.99</s></h4>
-                            <h1>R$ 79.90</h1>
-                            <h4>ou 4x de R$19.99</h4>
-                        </div><!--valores-->
-                        <img src="./img/Group.png" alt="Favoritar">
-                    </div>
-                </div><!--item3-->
+                    <div class="item 1"><!--config do produto-->
+                        <div class="imgProduto">
+                            <img class="imgItem" src="./img/racao.jpg" alt="">
+                            <img id="favorito" class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                            <!-- <button onclick="favoritar()"> <img class="favorito" src="./img/BotãoFavoritar.png" alt=""></button> -->
+                            <!-- <img class="desfavoritar" src="./img/icone.svg" alt=""> -->
+                        </div>
+                        <span class="spanProduto"></span>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h3>Nome Produto</h3>
+
+                            <div class="valores"><!--posicionamento dos valores-->
+                                <h4 class="valorOriginal"><s>R$ 99.99</s></h4>
+                                <h1>R$ 79.90</h1>
+                                <h4>ou 4x de R$19.99</h4>
+                            </div><!--valores-->
+                            <a href="/produto.html">Buy</a>
+                        </div>
+                    </div><!--item1-->
+
+                    <div class="item 2"><!--config do produto-->
+                        <div class="imgProduto">
+                            <img class="imgItem" src="./img/racao.jpg" alt="">
+                            <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                        </div>
+                        <span class="spanProduto"></span>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h3>Nome Produto</h3>
+                            <div class="valores"><!--posicionamento dos valores-->
+                                <h4 class="valorOriginal"><s>R$ 99.99</s></h4>
+                                <h1>R$ 79.90</h1>
+                                <h4>ou 4x de R$19.99</h4>
+                            </div><!--valores-->
+                            <a href="/produto.html">Comprar</a>
+                        </div>
+                    </div><!--item2-->
+
+                    <div class="item 3"><!--config do produto-->
+                        <div class="imgProduto">
+                            <img class="imgItem" src="./img/racao.jpg" alt="">
+                            <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                        </div>
+                        <span class="spanProduto"></span>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h3>Nome Produto</h3>
+                            <div class="valores"><!--posicionamento dos valores-->
+                                <h4 class="valorOriginal"><s>R$ 99.99</s></h4>
+                                <h1>R$ 79.90</h1>
+                                <h4>ou 4x de R$19.99</h4>
+                            </div><!--valores-->
+                            <a href="/produto.html">Comprar</a>
+                        </div>
+                    </div><!--item3-->
 
                     <div class="item 4"><!--config do produto-->
-                    <div class="imgProduto">
-                        <img src="./img/slide1.jpg" alt="">
-                    </div>
-                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
-                        <h3>Nome Produto</h3>
-                        <div class="valores"><!--posicionamento dos valores-->
-                            <h4><s>R$ 99.99</s></h4>
-                            <h1>R$ 79.90</h1>
-                            <h4>ou 4x de R$19.99</h4>
-                        </div><!--valores-->
-                        <img src="./img/Group.png" alt="Favoritar">
-                    </div>
-                </div><!--item4-->
+                        <div class="imgProduto">
+                            <img class="imgItem" src="./img/racao.jpg" alt="">
+                            <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                        </div>
+                        <span class="spanProduto"></span>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h3>Nome Produto</h3>
+                            <div class="valores"><!--posicionamento dos valores-->
+                                <h4 class="valorOriginal"><s>R$ 99.99</s></h4>
+                                <h1>R$ 79.90</h1>
+                                <h4>ou 4x de R$19.99</h4>
+                            </div><!--valores-->
+                            <a href="/produto.html">Comprar</a>
+                        </div>
+                    </div><!--item4-->
 
-                <div class="item 5"><!--config do produto-->
-                    <div class="imgProduto">
-                        <img src="./img/slide4.jpg" alt="">
-                    </div>
-                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
-                        <h3>Nome Produto</h3>
-                        <div class="valores"><!--posicionamento dos valores-->
-                            <h4><s>R$ 99.99</s></h4>
-                            <h1>R$ 79.90</h1>
-                            <h4>ou 4x de R$19.99</h4>
-                        </div><!--valores-->
-                        <img src="./img/Group.png" alt="Favoritar">
-                    </div>
-                </div><!--item5-->
-                
-                <div class="item 6"><!--config do produto-->
-                    <div class="imgProduto">
-                        <img src="./img/slide2.jpg" alt="">
-                    </div>                    
-                    <div class="descricao"><!--Desc titulo, valores e favoritar-->
-                        <h3>Nome Produto</h3>
-                        <div class="valores"><!--posicionamento dos valores-->
-                            <h4><s>R$ 99.99</s></h4>
-                            <h1>R$ 79.90</h1>
-                            <h4>ou 4x de R$19.99</h4>
-                        </div><!--valores-->
-                        <img src="./img/Group.png" alt="Favoritar">
-                    </div>
-                </div><!--item6-->
+                    <div class="item 5"><!--config do produto-->
+                        <div class="imgProduto">
+                            <img class="imgItem" src="./img/racao.jpg" alt="">
+                            <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                        </div>
+                        <span class="spanProduto"></span>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h3>Nome Produto</h3>
+                            <div class="valores"><!--posicionamento dos valores-->
+                                <h4 class="valorOriginal"><s>R$ 99.99</s></h4>
+                                <h1>R$ 79.90</h1>
+                                <h4>ou 4x de R$19.99</h4>
+                            </div><!--valores-->
+                            <a href="/produto.html">Comprar</a>
+                        </div>
+                    </div><!--item5-->
 
-            </div><!--Grid-->
-        </div><!--PRODUTOS-->
-    </div><!--PetContainer-->
+                    <div class="item 6"><!--config do produto-->
+                        <div class="imgProduto">
+                            <img class="imgItem" src="./img/racao.jpg" alt="">
+                            <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                        </div>
+                        <span class="spanProduto"></span>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h3>Nome Produto</h3>
+                            <div class="valores"><!--posicionamento dos valores-->
+                                <h4 class="valorOriginal"><s>R$ 99.99</s></h4>
+                                <h1>R$ 79.90</h1>
+                                <h4>ou 4x de R$19.99</h4>
+                            </div><!--valores-->
+                            <a href="/produto.html">Comprar</a>
+                        </div>
+                    </div><!--item6-->
 
-<!-- FOOTER -->
-    <div class="footer">
+                </div><!--Grid-->
+            </div><!--PRODUTOS-->
+        </div>
+
+        <!-- Mais vendidos -->
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="tituloContainer">
+                <div class="titulo">
+                    <h1>Mais Vendidos</h1>
+                    <h4>View more</h4>
+                    <img src="./img/setaReta.png" alt="">
+                </div>
+                <div class="btnAnimais">
+                    <a href="./pedidos.html">Gatos</a>
+                    <a href="./confirmarCompra.html">Cachorros</a>
+                    <a href="/">Passarinhos</a>
+                    <a href="/">Peixes</a>
+                    <a href="/">Coelhos</a>
+                    <a href="/">Hamister</a>
+                </div>
+            </div> <!--tituloContainer -->
+            <!--MAIS VENDIDOS-->
+            <div class="produto"><!--limite de posicionamento geral-->
+
+                <div class="gridProdutos"><!--divisão do grid-->
+
+                    <div class="item"><!--config do produto-->
+                        <div class="imgProduto">
+                            <img class="imgItem" src="./img/racao.jpg" alt="">
+                            <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                        </div>
+                        <span class="spanProduto"></span>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h3>Nome Produto</h3>
+
+                            <div class="valores"><!--posicionamento dos valores-->
+                                <h4 class="valorOriginal"><s>R$ 99.99</s></h4>
+                                <h1>R$ 79.90</h1>
+                                <h4>ou 4x de R$19.99</h4>
+                            </div><!--valores-->
+                            <a href="/produto.html">Comprar</a>
+                        </div>
+                    </div><!--item1-->
+
+                    <div class="item"><!--config do produto-->
+                        <div class="imgProduto">
+                            <img class="imgItem" src="./img/racao.jpg" alt="">
+                            <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                        </div>
+                        <span class="spanProduto"></span>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h3>Nome Produto</h3>
+                            <div class="valores"><!--posicionamento dos valores-->
+                                <h4><s>R$ 99.99</s></h4>
+                                <h1>R$ 79.90</h1>
+                                <h4>ou 4x de R$19.99</h4>
+                            </div><!--valores-->
+                            <a href="/produto.html">Comprar</a>
+                        </div>
+                    </div><!--item2-->
+
+                    <div class="item"><!--config do produto-->
+                        <div class="imgProduto">
+                            <img class="imgItem" src="./img/racao.jpg" alt="">
+                            <img class="favorito" src="./img/BotãoFavoritar.png" alt="">
+                        </div>
+                        <span class="spanProduto"></span>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h3>Nome Produto</h3>
+                            <div class="valores"><!--posicionamento dos valores-->
+                                <h4><s>R$ 99.99</s></h4>
+                                <h1>R$ 79.90</h1>
+                                <h4>ou 4x de R$19.99</h4>
+                            </div><!--valores-->
+                            <a href="/produto.html">Comprar</a>
+                        </div>
+                    </div><!--item3-->
+
+                </div><!--Grid-->
+            </div><!--PRODUTOS-->
+        </div>
+
+        <!-- Marcas -->
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+            <div class="tituloContainer">
+                <div class="titulo">
+                    <h1>Marcas</h1>
+                    <h4>View more</h4>
+                </div>
+
+            </div> <!--PetContainer -->
+            <!--MARCAS-->
+            <div class="marcas"><!--limite de posicionamento geral-->
+                <div class="gridMarcas"><!--divisão do grid-->
+
+                    <div class="item 1"><!--config do produto-->
+                        <div class="imgMarca">
+                            <img class="imgItem" src="./img/golden.jpg" alt="">
+                        </div>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h6>GoldeN</h6>
+                        </div>
+                    </div><!--item1-->
+
+                    <div class="item 2"><!--config do produto-->
+                        <div class="imgMarca">
+                            <img class="imgItem" src="./img/pedigree.jpg" alt="">
+                        </div>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h6>Pedigree</h6>
+                        </div>
+                    </div><!--item2-->
+
+                    <div class="item 3"><!--config do produto-->
+                        <div class="imgMarca">
+                            <img class="imgItem" src="./img/granplus..jpg" alt="">
+                        </div>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h6>GranPlus</h6>
+                        </div>
+                    </div><!--item3-->
+
+                    <div class="item 4"><!--config do produto-->
+                        <div class="imgMarca">
+                            <img class="imgItem" src="./img/whiskas.jpg" alt="">
+                        </div>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h6>Whiscas</h6>
+                        </div>
+                    </div><!--item4-->
+
+                    <div class="item 5"><!--config do produto-->
+                        <div class="imgMarca">
+                            <img class="imgItem" src="./img/magnus.jpg" alt="">
+                        </div>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h6>Magnus</h6>
+                        </div>
+                    </div><!--item5-->
+
+                    <div class="item 6"><!--config do produto-->
+                        <div class="imgMarca">
+                            <img class="imgItem" src="./img/royal.jpg" alt="">
+                        </div>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h6>Royal Canin</h6>
+                        </div>
+                    </div><!--item6-->
+                    <div class="item 7"><!--config do produto-->
+                        <div class="imgMarca">
+                            <img class="imgItem" src="./img/premier.jpg" alt="">
+                        </div>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h6>PremieR</h6>
+                        </div>
+                    </div><!--item7-->
+
+                    <div class="item 8"><!--config do produto-->
+                        <div class="imgMarca">
+                            <img class="imgItem" src="./img/vet.jpg" alt="">
+                        </div>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h6>Vet Life</h6>
+                        </div>
+                    </div><!--item8-->
+
+                    <div class="item 9"><!--config do produto-->
+                        <div class="imgMarca">
+                            <img class="imgItem" src="./img/natural.jpg" alt="">
+                        </div>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h6>Guabi Natural</h6>
+                        </div>
+                    </div><!--item9-->
+
+                    <div class="item 10"><!--config do produto-->
+                        <div class="imgMarca">
+                            <img class="imgItem" src="./img/special.jpg" alt="">
+                        </div>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h6>Special Dog</h6>
+                        </div>
+                    </div><!--item10-->
+
+                    <div class="item 11"><!--config do produto-->
+                        <div class="imgMarca">
+                            <img class="imgItem" src="./img/matisse.jpg" alt="">
+                        </div>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h6>Matisse</h6>
+                        </div>
+                    </div><!--item11-->
+
+                    <div class="item 12"><!--config do produto-->
+                        <div class="imgMarca">
+                            <img class="imgItem" src="./img/purina.jpg" alt="">
+                        </div>
+                        <div class="descricao"><!--Desc titulo, valores e favoritar-->
+                            <h6>Purina</h6>
+                        </div>
+                    </div><!--item12-->
+
+                </div><!--Grid-->
+            </div><!--PRODUTOS-->
+        </div>
+
+
+
+        <!-- <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">.
+
+
+        </div> -->
+    </div>
+
+    <!-- FOOTER -->
+    <div class="rodape">
         <div class="footerDescricoes">
             <div class="logo"><!--grid 1-->
-                <img src="./img/logoPurple.svg" alt="">
-                <span></span>
+                <img src="./img/logoFooter.svg" alt="">
+                <!-- <span></span> -->
                 <!-- boneco de arrasta pra cima -->
             </div>
             <div class="sitemap">
-                <h1> Sitemap</h1>
-                
-                    <a href="/">Perfil</a>
-                    <a href="/">Produtos</a>
-                    <a href="/">Promoções</a>
-                    <a href="/">Meu Carrinho</a>
-                    <a href="/">Pedidos </a>
-                
+
+                <a href="./perfil.html">Perfil</a>
+                <a href="./produtos.html">Produtos</a>
+                <a href="/">Promoções</a>
+                <a href="./carrinho.html">Meu Carrinho</a>
+                <a href="/">Pedidos </a>
+
             </div>
             <div class="contato">
-                <h1>Contatos</h1> 
-                <img src="./img/iconeCarrinho.svg" alt="">
-                <img src="./img/iconeCarrinho.svg" alt="">
-                <img src="./img/iconeCarrinho.svg" alt="">
+                <h1>Contatos</h1>
+                <img src="./img/whatsapp.png" alt="Whatsapp">
+                <img src="./img/instagram.png" alt="Instagram">
                 <span></span>
                 <h3>.Cadastre-se para receber atualizações e promoções</h3>
                 <input type="email" placeholder="E-mail">
                 <button>Enviar</button>
             </div>
         </div>
-        <h3 class="rodape">Todos os direitos reservados ao Mr.Pet</h3>
+        <h3 class="direitosReservados">Todos os direitos reservados ao Mr.Pet</h3>
     </div>
 
 
 
 
-
-
-
-
-    <!-- <script src="./script.js"></script> -->
+    <script src="./jquery-3.3.1.slim.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./bootstrap.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
